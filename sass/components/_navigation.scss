@@ -1,0 +1,21 @@
+.menu-container {
+  display: none;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 34px;
+}
+.menu-button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.nav__profile {
+  display: flex;
+}
