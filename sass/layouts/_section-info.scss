@@ -1,0 +1,39 @@
+.section-info {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  background-color: $primary-white-color;
+}
+.section-info__header {
+  font-family: 'Cormorant';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+
+  width: 185px;
+}
+.section-info__img-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-top: 30px;
+  margin-bottom: 56px;
+}
+
+.section-info__img {
+  margin-right: 14px;
+}
+
+.section-info__description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+}
+
+.section-info__description:not(:last-child) {
+  margin-bottom: 22px;
+}

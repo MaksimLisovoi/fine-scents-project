@@ -234,7 +234,7 @@ img {
 
 .section-gallery {
   padding-top: 100px;
-  padding-bottom: 164px;
+  padding-bottom: 127px;
   background-color: #1c1b1a;
 }
 
@@ -243,8 +243,13 @@ img {
   color: rgba(229, 223, 211, 0.5);
 }
 
+.section-gallery__gallery--image {
+  margin: 0 auto;
+}
+
 .section-gallery__pagination {
   text-align: center;
+  border-bottom: 1px solid rgba(229, 223, 211, 0.5);
 }
 
 .section-gallery__pagination--page {
@@ -258,4 +263,43 @@ img {
 }
 .section-gallery__pagination--page.active {
   color: #e5dfd3;
+}
+
+.section-info {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #fbf9f7;
+}
+
+.section-info__header {
+  font-family: "Cormorant";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  width: 185px;
+}
+
+.section-info__img-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 56px;
+}
+
+.section-info__img {
+  margin-right: 14px;
+}
+
+.section-info__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+}
+
+.section-info__description:not(:last-child) {
+  margin-bottom: 22px;
 }/*# sourceMappingURL=main.css.map */

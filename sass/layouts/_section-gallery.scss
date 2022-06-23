@@ -1,6 +1,6 @@
 .section-gallery {
   padding-top: 100px;
-  padding-bottom: 164px;
+  padding-bottom: 127px;
   background-color: $gallery-background-color;
 }
 
@@ -10,9 +10,12 @@
   margin-bottom: 56px;
   color: $gallery-text-color;
 }
-
+.section-gallery__gallery--image {
+  margin: 0 auto;
+}
 .section-gallery__pagination {
   text-align: center;
+  border-bottom: 1px solid rgba(229, 223, 211, 0.5);
 }
 .section-gallery__pagination--page {
   font-family: 'Roboto';
