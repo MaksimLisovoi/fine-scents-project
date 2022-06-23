@@ -1,6 +1,6 @@
 .header__page {
   max-width: 1600px;
-
+  padding-bottom: 28px;
   margin-right: auto;
   margin-left: auto;
   background-image: url(../images/hero-mobile.jpg);
@@ -8,5 +8,11 @@
   background-position: center;
   background-color: $primary-gray-color;
   background-color: #fff;
-  padding-bottom: 700px;
+
+}
+
+.header__controls{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
 }
