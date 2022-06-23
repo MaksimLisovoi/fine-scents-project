@@ -1,5 +1,18 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 body {
-  background-color: #383838;
+  background-color: #fff;
   color: #000000;
   font-family: roboto, sans-serif;
 }
@@ -38,6 +51,11 @@ img {
   padding-right: 18px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 370px) {
+  .container {
+    width: 370px;
+  }
 }
 @media (min-width: 768px) {
   .container {
@@ -96,11 +114,107 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #383838;
-  background-color: #fff;
 }
 
 .header__controls {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.bestseller__section {
+  background-color: #fff;
+  padding-top: 60px;
+  padding-bottom: 98px;
+  text-align: center;
+}
+
+.bestseller__title {
+  font-family: "Cormorant", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  margin-bottom: 30px;
+}
+
+.bestseller__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+}
+
+.bestseller__picture-block {
+  padding-top: 72px;
+  padding-bottom: 55px;
+  border-bottom: 1px solid #868483;
+}
+
+.bestseller__img {
+  margin: 0 auto;
+}
+
+.bestseller__buttons-block {
+  display: none;
+}
+
+.bestseller__price-block {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.bestseller__price-block {
+  padding-top: 26px;
+  padding-bottom: 50px;
+}
+
+.bestseller__price-block--title {
+  margin-bottom: 10px;
+  font-family: "Cormorant";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1;
+}
+
+.bestseller__price-block--name {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  color: #868483;
+}
+
+.button {
+  width: 339px;
+  height: 50px;
+  border: 1px solid #000000;
+  background-color: #fff;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.section-about {
+  padding-top: 100px;
+  padding-bottom: 160px;
+}
+
+.section-about__header {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  margin-bottom: 30px;
+}
+
+.section-about__main-paragraph {
+  font-family: "Cormorant";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 100px;
 }/*# sourceMappingURL=main.css.map */

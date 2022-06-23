@@ -1,0 +1,59 @@
+.bestseller__section {
+  background-color: $primary-white-color;
+  padding-top: 60px;
+  padding-bottom: 98px;
+
+  text-align: center;
+}
+.bestseller__title {
+  font-family: 'Cormorant', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  margin-bottom: 30px;
+}
+
+.bestseller__description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+}
+.bestseller__picture-block {
+  padding-top: 72px;
+  padding-bottom: 55px;
+  border-bottom: 1px solid $secondary-text-color;
+}
+.bestseller__img {
+  margin: 0 auto;
+}
+.bestseller__buttons-block {
+  display: none;
+}
+.bestseller__price-block {
+  display: flex;
+  justify-content: space-between;
+
+  text-align: left;
+}
+.bestseller__price-block {
+  padding-top: 26px;
+  padding-bottom: 50px;
+}
+.bestseller__price-block--title {
+  margin-bottom: 10px;
+
+  font-family: 'Cormorant';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1;
+}
+.bestseller__price-block--name {
+  font-family: 'Roboto';
+
+  font-weight: 300;
+  font-size: 18px;
+  color: $secondary-text-color;
+}

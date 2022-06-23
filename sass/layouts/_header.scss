@@ -7,12 +7,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: $primary-gray-color;
-  background-color: #fff;
-
 }
 
-.header__controls{
+.header__controls {
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
