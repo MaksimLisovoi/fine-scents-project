@@ -1,6 +1,8 @@
 .section-about {
   padding-top: 100px;
   padding-bottom: 160px;
+
+  background-color: $gray-background-color;
 }
 .section-about__header {
   font-family: 'Roboto';
@@ -19,4 +21,15 @@
   letter-spacing: -0.03em;
 
   margin-bottom: 100px;
+}
+.section-about__secondary-paragraph {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+}
+
+.section-about__secondary-paragraph:not(:last-child) {
+  margin-bottom: 56px;
 }

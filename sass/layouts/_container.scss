@@ -7,7 +7,7 @@
   margin-right: auto;
 
   @include for-size(tablet-portrait) {
-    width: 370px;
+    width: 480px;
   }
   @include for-size(tablet-landscape) {
     width: 768px;

@@ -1,0 +1,30 @@
+.section-gallery {
+  padding-top: 100px;
+  padding-bottom: 164px;
+  background-color: $gallery-background-color;
+}
+
+.section-gallery__header {
+  @extend .section-about__header;
+
+  margin-bottom: 56px;
+  color: $gallery-text-color;
+}
+
+.section-gallery__pagination {
+  text-align: center;
+}
+.section-gallery__pagination--page {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 10;
+  letter-spacing: -0.03em;
+
+  color: $gallery-text-color;
+
+  &.active {
+    color: $gallery-page-color;
+  }
+}
