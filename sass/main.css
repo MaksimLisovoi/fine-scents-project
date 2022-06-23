@@ -11,6 +11,15 @@ p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+}
+
 figure {
   margin: 0;
   padding: 0;
@@ -115,7 +124,7 @@ img {
   padding-bottom: 28px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url(../images/hero-mobile.jpg);
+  background-image: url(../../images/imgs/hero-header.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #383838;
@@ -374,4 +383,66 @@ img {
 
 .section-material__descr-block--paragraph:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.footer {
+  padding-top: 56px;
+  padding-bottom: 34px;
+  background-color: #000000;
+  color: #e5dfd3;
+}
+
+.footer__newsletter--header {
+  font-family: "Cormorant";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+}
+
+.footer__form- {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__form--input {
+  height: 44px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  display: block;
+  background-color: #000000;
+  border: 0.5px solid #e5dfd3;
+}
+
+.footer__form--checkbox {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.footer-features__link {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #e5dfd3;
+}
+
+.footer__header {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */

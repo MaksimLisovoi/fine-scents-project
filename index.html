@@ -386,20 +386,63 @@
 
     <!-- FOOTER -->
 
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <h2>newsletter</h2>
+        <div class="footer__newsletter">
+          <h2 class="footer__newsletter--header">newsletter</h2>
 
-        <form name="subscribe" action="">
-          <label>
-            Email
-            <input type="email" name="mail" id="mail" class="form-field" placeholder="Email" />
-          </label>
-          <label>
-            <input type="checkbox" name="hobby" value="music" checked />
-            Music
-          </label>
-        </form>
+          <form name="subscribe" action="" class="footer__form">
+            <label>
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                class="footer__form--input"
+                placeholder="Email"
+              />
+            </label>
+            <label class="footer__form--checkbox">
+              <input type="checkbox" name="policy" value="policy" checked />
+              Subscribe to receive communications from Fine Scents about our products and services.
+              By subscribing, you confirm you have read and accept our privacy policy
+            </label>
+          </form>
+        </div>
+
+        <div class="footer-features">
+          <div class="footer-features__support">
+            <h3 class="footer__header">Support</h3>
+            <a class="footer-features__link" href="">Contact us</a>
+            <a class="footer-features__link" href="">Shipping</a>
+            <a class="footer-features__link" href="">Privacy policy</a>
+            <a class="footer-features__link" href="">Our story</a>
+            <a class="footer-features__link" href="">FAQs</a>
+          </div>
+          <div class="footer-features__settings">
+            <h3 class="footer__header">Settings</h3>
+            <div>
+              <label for="language"></label>
+              <select id="language" name="language">
+                <option value="English">English</option>
+                <option value="Espanol">Small</option>
+              </select>
+            </div>
+            <div>
+              <label for="currancy"></label>
+              <select id="currancy" name="currancy">
+                <option value="USD">USD</option>
+                <option value="EU">EU</option>
+              </select>
+            </div>
+          </div>
+          <div class="footer-features__social">
+            <h3 class="footer__header">Social media</h3>
+            <a class="footer-features__link" href="">Instagram</a>
+            <a class="footer-features__link" href="">Facebook</a>
+            <a class="footer-features__link" href="">Twitter</a>
+            <a class="footer-features__link" href="">YouTube</a>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
