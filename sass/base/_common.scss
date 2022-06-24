@@ -14,6 +14,7 @@ p {
 }
 a {
   text-decoration: none;
+  color: $primary-black-color;
 }
 input {
   margin: 0;
@@ -27,6 +28,10 @@ body {
   background-color: $primary-white-color;
   color: $primary-text-color;
   font-family: roboto, sans-serif;
+}
+ul {
+  margin: 0;
+  padding: 0;
 }
 li {
   list-style: none;
