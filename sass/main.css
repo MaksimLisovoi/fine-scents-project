@@ -297,7 +297,6 @@ img {
 .section-info__img-box {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 56px;
 }
@@ -392,6 +391,10 @@ img {
   color: #e5dfd3;
 }
 
+.footer__newsletter {
+  margin-bottom: 74px;
+}
+
 .footer__newsletter--header {
   font-family: "Cormorant";
   font-weight: 700;
@@ -399,6 +402,7 @@ img {
   line-height: 1.02;
   letter-spacing: -0.03em;
   text-transform: capitalize;
+  margin-bottom: 28px;
 }
 
 .footer__form- {
@@ -410,13 +414,14 @@ img {
 .footer__form--input {
   height: 44px;
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.04em;
   display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 34px;
   background-color: #000000;
   border: 0.5px solid #e5dfd3;
 }
@@ -430,6 +435,7 @@ img {
 }
 
 .footer-features__link {
+  display: block;
   font-family: "Roboto";
   font-weight: 300;
   font-size: 12px;
@@ -445,4 +451,57 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+.footer-features {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 70px;
+  border-bottom: 1px solid rgba(229, 223, 211, 0.5);
+}
+
+.footer-features__block {
+  margin-top: 40px;
+}
+
+.footer-features > div {
+  width: 50%;
+}
+
+.footer-features > div:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.footer-features__link:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.footer-features__language {
+  margin-bottom: 6px;
+}
+
+.footer-features__item {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: #000000;
+  color: #e5dfd3;
+  border: none;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+.footer-logo__caption {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  color: #e5dfd3;
 }/*# sourceMappingURL=main.css.map */
