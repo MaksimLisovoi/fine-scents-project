@@ -65,6 +65,77 @@ img {
   background-color: #383838;
 }
 
+.section-gray {
+  padding-top: 100px;
+  padding-bottom: 160px;
+  background-color: #e6e1db;
+}
+
+.section__header {
+  font-family: "Cormorant";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.section-paragraph {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+}
+
+.section-paragraph:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.section-h3, .section-gallery__header {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.our-mission__header {
+  max-width: 1600px;
+  padding-bottom: 28px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(../../images/imgs/our-mission-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #383838;
+}
+
+.header-slider__pagination {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 10;
+  letter-spacing: -0.03em;
+  color: rgba(229, 223, 211, 0.5);
+}
+
+.header-slider__active-page {
+  color: #e5dfd3;
+}
+
+.our-mission-pagination {
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(229, 223, 211, 0.5);
+  padding-bottom: 9px;
+}
+
 .container {
   width: 100%;
   padding-left: 18px;
@@ -95,7 +166,7 @@ img {
   justify-content: space-between;
   align-items: baseline;
   padding-top: 34px;
-  margin-bottom: 560px;
+  margin-bottom: 100%;
 }
 
 .navigation__button {
@@ -110,6 +181,10 @@ img {
 
 .navigation__button.play {
   margin-bottom: 38px;
+}
+
+.navigation__button.arrow {
+  margin-right: 0 auto;
 }
 
 .nav__profile {
@@ -287,15 +362,6 @@ img {
   background-color: #e6e1db;
 }
 
-.section-about__header, .section-gallery__header {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1;
-  letter-spacing: 0.12em;
-  margin-bottom: 30px;
-}
-
 .section-about__main-paragraph {
   font-family: "Cormorant";
   font-weight: 700;
@@ -335,6 +401,8 @@ img {
 .section-gallery__pagination {
   text-align: center;
   border-bottom: 1px solid rgba(229, 223, 211, 0.5);
+  padding-top: 56px;
+  padding-bottom: 39px;
 }
 
 .section-gallery__pagination--page {
@@ -342,7 +410,7 @@ img {
   font-style: normal;
   font-weight: 300;
   font-size: 22px;
-  line-height: 10;
+  line-height: 1;
   letter-spacing: -0.03em;
   color: rgba(229, 223, 211, 0.5);
 }
@@ -575,4 +643,29 @@ img {
   line-height: 1.6;
   letter-spacing: 0.04em;
   color: #e5dfd3;
+}
+
+.section-design {
+  padding-top: 60px;
+  padding-bottom: 86px;
+}
+
+.section-design__block {
+  margin-bottom: 65px;
+}
+
+.section-design__img {
+  margin: 0 auto;
+}
+
+.section__header-design {
+  width: 200px;
+}
+
+.section__header-philosophy {
+  margin-bottom: 140px;
+}
+
+.section__header-block:not(:last-child) {
+  margin-bottom: 75px;
 }/*# sourceMappingURL=main.css.map */

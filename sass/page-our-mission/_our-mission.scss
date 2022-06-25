@@ -1,0 +1,28 @@
+.our-mission__header {
+  max-width: 1600px;
+  padding-bottom: 28px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(../../images/imgs/our-mission-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $primary-gray-color;
+}
+.header-slider__pagination {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 10;
+  letter-spacing: -0.03em;
+
+  color: $gallery-text-color;
+}
+.header-slider__active-page {
+  color: $gallery-page-color;
+}
+.our-mission-pagination {
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(229, 223, 211, 0.5);
+  padding-bottom: 9px;
+}

@@ -58,3 +58,39 @@ img {
 .page-header {
   background-color: $primary-gray-color;
 }
+.section-gray {
+  padding-top: 100px;
+  padding-bottom: 160px;
+
+  background-color: $gray-background-color;
+}
+.section__header {
+  font-family: 'Cormorant';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+.section-paragraph {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+}
+.section-paragraph:not(:last-child) {
+  margin-bottom: 20px;
+}
+.section-h3 {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+}

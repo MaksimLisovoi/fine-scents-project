@@ -1,6 +1,7 @@
 @import './utils/variables';
 @import './utils/mixins';
 @import './base/common';
+@import './page-our-mission/our-mission';
 @import './layouts/container';
 @import './components/navigation';
 @import './layouts/header';
@@ -11,3 +12,5 @@
 @import './layouts/section-info';
 @import './layouts/section-materials';
 @import './layouts/footer';
+@import './page-our-mission/section-design';
+@import './page-our-mission/section-philosophy';
