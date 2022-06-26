@@ -1,0 +1,129 @@
+.navigation-desktop {
+  padding-left: 86px;
+}
+.navigation-desktop__block {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  // padding-top: 36px;
+}
+.navigation-desktop__logo {
+  padding-top: 36px;
+}
+.navigation-desktop__item {
+  width: 500px;
+  height: 1080px;
+  padding-top: 36px;
+
+  transition: transform 500ms ease-in-out;
+}
+.navigation-desktop__item.shop {
+  transform: translateX(295%);
+  padding-left: 30px;
+
+  background-color: $secondary-gray-background-color;
+}
+.shop:hover {
+  transform: translateX(250%);
+}
+.navigation-desktop__item.about {
+  transform: translateX(215%);
+  padding-left: 26px;
+  padding-right: 30px;
+
+  background-color: $secondary-text-color;
+}
+.about:hover {
+  transform: translateX(170%);
+}
+.navigation-desktop__item.account {
+  background-color: #afafaf;
+  padding-left: 17px;
+  transform: translateX(150%);
+}
+.account:hover {
+  transform: translateX(75%);
+}
+.navigation-desktop__item.basket {
+  background-color: #383838;
+  padding-left: 23px;
+  transform: translateX(75%);
+}
+.basket:hover {
+  transform: translateX(0);
+}
+
+.navigation-desktop__header {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+//SHOP//
+
+.shop__list {
+  margin-top: 90px;
+}
+.shop__list > li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.shop__list--header {
+  font-family: 'Cormorant';
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.04em;
+
+  color: #f7f5f3;
+}
+.shop-item {
+  width: 228px;
+  height: 274px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop-item.scents {
+  background-image: url(../../images/imgs/desktop-menu/scents-shop.jpg);
+  background-size: 228px 274px;
+}
+.shop-item.applying {
+  background-image: url(../../images/imgs/desktop-menu/applying-shop.jpg);
+}
+.shop-item.all {
+  background-image: url(../../images/imgs/desktop-menu/all-shop.jpg);
+}
+
+//ABOUT//
+
+.navigation-desktop__section-about {
+  padding-top: 145px;
+  padding-bottom: 570px;
+}
+.about-header {
+  font-family: 'Cormorant';
+  font-weight: 600;
+  font-size: 38px;
+  letter-spacing: -0.03em;
+
+  width: 110px;
+  margin-bottom: 45px;
+}
+.about-paragraph {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+
+  width: 190px;
+
+  letter-spacing: 0.02em;
+}
+
+.about-paragraph:not(:last-child) {
+  margin-bottom: 25px;
+}

@@ -17,7 +17,15 @@
   margin-bottom: 100%;
   padding-left: 18px;
   padding-right: 18px;
+
+  @include for-size(desktop) {
+    display: none;
+  }
 }
+
+// .navigation-desktop__shop:hover {
+//   transform: translateX(0);
+// }
 .navigation__button {
   display: block;
   width: 40px;
