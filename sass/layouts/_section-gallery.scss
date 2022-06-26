@@ -1,13 +1,13 @@
 .section-gallery {
   padding-top: 100px;
-  padding-bottom: 127px;
+  padding-bottom: 130px;
   background-color: $gallery-background-color;
 }
 
 .section-gallery__header {
   @extend .section-h3;
 
-  margin-bottom: 56px;
+  margin-bottom: 60px;
   color: $gallery-text-color;
 }
 .section-gallery__gallery--image {
@@ -17,8 +17,8 @@
   text-align: center;
   border-bottom: 1px solid rgba(229, 223, 211, 0.5);
 
-  padding-top: 56px;
-  padding-bottom: 39px;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 .section-gallery__pagination--page {
   font-family: 'Roboto';
