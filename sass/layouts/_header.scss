@@ -10,9 +10,9 @@
 
   @include for-size(desktop) {
     max-width: 1920px;
-    height: 1080px;
+    height: 100vh;
     background-image: url(../../images/imgs/header-hero-desktop.jpg);
-    background-position: inherit;
+    // background-position: inherit;
   }
 }
 

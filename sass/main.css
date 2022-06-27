@@ -21,6 +21,12 @@ input {
   padding: 0;
 }
 
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
 figure {
   margin: 0;
   padding: 0;
@@ -389,9 +395,8 @@ main {
 @media (min-width: 800px) {
   .header__page {
     max-width: 1920px;
-    height: 1080px;
+    height: 100vh;
     background-image: url(../../images/imgs/header-hero-desktop.jpg);
-    background-position: inherit;
   }
 }
 
@@ -809,13 +814,13 @@ main {
 }
 
 .navigation-desktop__item {
-  width: 500px;
-  height: 1080px;
+  height: 100vh;
   padding-top: 36px;
   transition: transform 500ms ease-in-out;
 }
 
 .navigation-desktop__item.shop {
+  display: none;
   transform: translateX(295%);
   padding-left: 30px;
   background-color: #eae8e6;
@@ -826,6 +831,7 @@ main {
 }
 
 .navigation-desktop__item.about {
+  display: none;
   transform: translateX(215%);
   padding-left: 26px;
   padding-right: 30px;
@@ -837,26 +843,29 @@ main {
 }
 
 .navigation-desktop__item.account {
+  display: none;
   background-color: #afafaf;
   padding-left: 17px;
-  transform: translateX(150%);
+  padding-right: 17px;
+  transform: translateX(92%);
 }
 
 .account:hover {
-  transform: translateX(75%);
+  transform: translateX(50%);
 }
 
 .navigation-desktop__item.basket {
+  width: 1041px;
   background-color: #383838;
   padding-left: 23px;
-  transform: translateX(75%);
+  transform: translateX(91%);
 }
 
 .basket:hover {
   transform: translateX(0);
 }
 
-.navigation-desktop__header {
+.navigation-desktop__header, .navigation-desktop__button {
   font-family: "Roboto";
   font-weight: 500;
   font-size: 12px;
@@ -882,7 +891,7 @@ main {
 
 .shop-item {
   width: 228px;
-  height: 274px;
+  height: calc((100vh - 240px) / 3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -890,7 +899,6 @@ main {
 
 .shop-item.scents {
   background-image: url(../../images/imgs/desktop-menu/scents-shop.jpg);
-  background-size: 228px 274px;
 }
 
 .shop-item.applying {
@@ -926,4 +934,99 @@ main {
 
 .about-paragraph:not(:last-child) {
   margin-bottom: 25px;
+}
+
+.shop-header-position {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-desktop__button {
+  padding: 0;
+}
+
+.account__sign-in-form--input {
+  width: 340px;
+  height: 50px;
+  padding-left: 24px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  border: none;
+  background: rgba(247, 245, 243, 0.7);
+}
+
+.account__sign-in-form--input.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+
+.account__sign-in-form--input::-moz-placeholder {
+  color: #000000;
+}
+
+.account__sign-in-form--input:-ms-input-placeholder {
+  color: #000000;
+}
+
+.account__sign-in-form--input::placeholder {
+  color: #000000;
+}
+
+.account__sign-in-form--paragraph {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  color: #060606;
+}
+
+.account__sign-in-form--btn {
+  width: 340px;
+  height: 50px;
+  margin-top: 26px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #f7f5f3;
+  background: #000000;
+}
+
+.forgot-pass {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  margin-top: 30px;
+  margin-bottom: 55px;
+}
+
+.account-block {
+  padding-right: 43px;
+  padding-left: 43px;
+  padding-top: 150px;
+}
+
+.account-block__btn {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.shop-header-position.btn-position {
+  margin-bottom: 32px;
+}
+
+.account-block__btn.active {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #000000;
 }/*# sourceMappingURL=main.css.map */
