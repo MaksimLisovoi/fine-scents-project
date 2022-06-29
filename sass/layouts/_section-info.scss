@@ -3,6 +3,11 @@
   padding-bottom: 100px;
 
   background-color: $primary-white-color;
+
+  @include for-size(desktop) {
+    padding-top: 173px;
+    padding-bottom: 436px;
+  }
 }
 .section-info__header {
   font-family: 'Cormorant';
@@ -10,8 +15,15 @@
   font-size: 28px;
   line-height: 1.1;
   letter-spacing: -0.03em;
+  text-transform: capitalize;
 
   width: 185px;
+
+  @include for-size(desktop) {
+    width: 526px;
+    font-size: 82px;
+    line-height: 1.02;
+  }
 }
 .section-info__img-box {
   display: flex;
@@ -20,9 +32,25 @@
   margin-top: 30px;
   margin-bottom: 60px;
 }
+.section-info-merge-block {
+  display: flex;
+  flex-direction: column;
+}
+.section-info-img-block {
+  display: flex;
+  margin-bottom: 80px;
+}
 
 .section-info__img {
   margin-right: 14px;
+}
+.section-info__img-desktop {
+  display: none;
+
+  @include for-size(desktop) {
+    display: block;
+    margin-left: 134px;
+  }
 }
 
 .section-info__description {
@@ -31,6 +59,11 @@
   font-weight: 300;
   line-height: 1.6;
   letter-spacing: 0.04em;
+
+  @include for-size(desktop) {
+    width: 636px;
+    font-size: 16px;
+  }
 }
 
 .section-info__description:not(:last-child) {

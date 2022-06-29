@@ -3,6 +3,11 @@
   padding-bottom: 140px;
 
   background-color: $gray-background-color;
+
+  @include for-size(desktop) {
+    padding-top: 180px;
+    padding-bottom: 340px;
+  }
 }
 .section-material__description {
   font-family: 'Cormorant';
@@ -13,6 +18,13 @@
 
   margin-top: 60px;
   margin-bottom: 140px;
+
+  @include for-size(desktop) {
+    font-size: 56px;
+
+    margin-top: 80px;
+    margin-bottom: 300px;
+  }
 }
 .section-material__header {
   font-family: 'Cormorant';
@@ -23,6 +35,11 @@
   letter-spacing: -0.03em;
 
   margin-bottom: 30px;
+
+  @include for-size(desktop) {
+    font-size: 52px;
+    width: 275px;
+  }
 }
 .section-material__img-block {
   display: flex;
@@ -38,17 +55,26 @@
 }
 .section-material__descr-block {
   margin-top: 104px;
+
+  @include for-size(desktop) {
+    width: 416px;
+    margin-top: 0;
+  }
 }
 
 .section-material__descr-block--header {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 14px;
-
   letter-spacing: 0.12em;
   text-transform: uppercase;
 
   margin-bottom: 30px;
+
+  @include for-size(desktop) {
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
 }
 .section-material__descr-block--paragraph {
   font-family: 'Roboto';
@@ -58,8 +84,16 @@
   line-height: 1.6;
 
   letter-spacing: 0.04em;
+
+  @include for-size(desktop) {
+    font-size: 16px;
+  }
 }
 
 .section-material__descr-block--paragraph:not(:last-child) {
   margin-bottom: 20px;
+
+  @include for-size(desktop) {
+    margin-bottom: 20px;
+  }
 }

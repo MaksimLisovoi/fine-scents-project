@@ -19,7 +19,7 @@
 
   margin-bottom: 28px;
 }
-.footer__form- {
+.footer__form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,6 +41,10 @@
 
   background-color: $primary-black-color;
   border: 0.5px solid #e5dfd3;
+
+  @include for-size(desktop) {
+    max-width: 526px;
+  }
 }
 
 .footer__form--checkbox {

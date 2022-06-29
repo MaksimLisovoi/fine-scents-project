@@ -764,16 +764,87 @@
       <!-- GALLERY -->
 
       <section class="section-gallery">
-        <div class="container">
+        <div class="container slider-controls__position">
           <h2 class="section-gallery__header">GALLERY</h2>
-
           <div class="section-gallery__gallery">
-            <img class="section-gallery__gallery--image" src="./images/gallery-img.jpg" alt="" />
+            <div class="section-gallery__picture-block">
+              <picture class="section-gallery__picture-desktop margin-right-200">
+                <source
+                  srcset="./images/imgs/desktop/gallery-desktop-2.jpg 1x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="section-gallery__gallery--image"
+                  src="./images/gallery-img.jpg"
+                  alt=""
+                />
+              </picture>
+              <h3 class="section-gallery__slideshow-header top">Love Letters</h3>
+              <h3 class="section-gallery__slideshow-header bottom">From Britain</h3>
+              <picture class="section-gallery__picture-desktop">
+                <source
+                  srcset="./images/imgs/desktop/gallery-desktop-3.jpg 1x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="section-gallery__gallery--image"
+                  src="./images/gallery-img.jpg"
+                  alt=""
+                />
+              </picture>
+            </div>
+            <div>
+              <picture>
+                <source
+                  srcset="./images/imgs/desktop/gallery-desktop-1.jpg 1x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="section-gallery__gallery--image"
+                  src="./images/gallery-img.jpg"
+                  alt=""
+                />
+              </picture>
+              <div class="section-gallery__description-block">
+                <p>The Old English Garden in London'</p>
+                <span>2022</span>
+              </div>
+            </div>
           </div>
           <div class="section-gallery__pagination">
             <span class="section-gallery__pagination--page active">02.</span>
             <span class="section-gallery__pagination--page">/</span>
             <span class="section-gallery__pagination--page">09.</span>
+          </div>
+          <div class="section-gallery__slideshow-controls">
+            <button class="section-gallery__slideshow-btn left">
+              <svg
+                width="161"
+                height="8"
+                viewBox="0 0 161 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.646454 4.35354C0.451187 4.15828 0.451187 3.84169 0.646454 3.64643L3.82843 0.464452C4.0237 0.26919 4.34027 0.26919 4.53554 0.464452C4.73079 0.659715 4.73079 0.976297 4.53554 1.17156L1.70711 3.99999L4.53554 6.82841C4.73079 7.02368 4.73079 7.34026 4.53554 7.53552C4.34027 7.73078 4.0237 7.73078 3.82843 7.53552L0.646454 4.35354ZM161 4.5L1 4.49999L1 3.49999L161 3.5L161 4.5Z"
+                  fill="#E5DFD3"
+                />
+              </svg>
+            </button>
+            <button class="section-gallery__slideshow-btn rigth">
+              <svg
+                width="161"
+                height="8"
+                viewBox="0 0 161 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M160.354 4.35354C160.549 4.15828 160.549 3.8417 160.354 3.64644L157.172 0.464456C156.976 0.269194 156.66 0.269194 156.464 0.464457C156.269 0.659719 156.269 0.976301 156.464 1.17156L159.293 3.99999L156.464 6.82842C156.269 7.02368 156.269 7.34026 156.464 7.53552C156.66 7.73079 156.976 7.73079 157.172 7.53552L160.354 4.35354ZM3.0598e-08 4.5L160 4.49999L160 3.49999L-3.0598e-08 3.5L3.0598e-08 4.5Z"
+                  fill="#E5DFD3"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -784,23 +855,47 @@
         <div class="container">
           <h2 class="section-info__header">Wood sage & sea salt cologne</h2>
           <div class="section-info__img-box">
-            <img
-              class="section-info__img"
-              src="./images/imgs/section-info-img.jpg"
-              alt=""
-              width="185"
-            />
-            <img src="./images/imgs/section-info-img2.jpg" alt="" width="140" />
+            <div class="section-info-merge-block">
+              <div class="section-info-img-block">
+                <picture>
+                  <source
+                    srcset="./images/imgs/desktop/info-desktop-1.jpg 1x"
+                    media="(min-width:1200px)"
+                  />
+
+                  <img class="section-info__img" src="./images/imgs/section-info-img.jpg" alt="" />
+                </picture>
+
+                <picture>
+                  <source
+                    srcset="./images/imgs/desktop/info-desktop-2.jpg 1x"
+                    media="(min-width:1200px)"
+                  />
+
+                  <img src="./images/imgs/section-info-img2.jpg" alt="" />
+                </picture>
+              </div>
+              <div>
+                <p class="section-info__description">
+                  Our objective has always been to formulate skin, hair and body care products of
+                  the finest quality; we investigate widely to source plant-based and
+                  laboratory-made ingredients.
+                </p>
+                <p class="section-info__description">
+                  Use only those with a proven record of safety and efficacy. In each of our unique
+                  stores, informed consultants are pleased to introduce.
+                </p>
+              </div>
+            </div>
+            <picture class="section-info__img-desktop">
+              <source
+                srcset="./images/imgs/desktop/info-desktop-3.jpg 1x"
+                media="(min-width:1200px)"
+              />
+
+              <img src="./images/imgs/section-info-img2.jpg" alt="" />
+            </picture>
           </div>
-          <p class="section-info__description">
-            Our objective has always been to formulate skin, hair and body care products of the
-            finest quality; we investigate widely to source plant-based and laboratory-made
-            ingredients.
-          </p>
-          <p class="section-info__description">
-            Use only those with a proven record of safety and efficacy. In each of our unique
-            stores, informed consultants are pleased to introduce.
-          </p>
         </div>
       </section>
 
@@ -808,40 +903,75 @@
 
       <section class="section-material">
         <div class="container">
-          <img src="./images/imgs/materials-walls.jpg" alt="" />
+          <picture>
+            <source
+              srcset="./images/imgs/desktop/materials-desktop-1.jpg 1x"
+              media="(min-width:1200px)"
+            />
+
+            <img src="./images/imgs/materials-walls.jpg" alt="" />
+          </picture>
+
           <p class="section-material__description">
             A meticulous passion. We Used Unique & Elegant Packing Materials. We believe that well
             considered design improves lives. We source materials from the most reputable suppliers
             across the globe and marry contemporary technology.
           </p>
-          <h2 class="section-material__header">MATERIALS USED</h2>
           <div class="section-material__img-block">
-            <figure class="section-material__img">
-              <img src="./images/imgs/materials-paper.jpg" alt="" width="185" />
-              <figcaption class="section-material__img--caption">PAPER</figcaption>
-            </figure>
-            <figure class="section-material__img">
-              <img src="./images/imgs/materials-silicone.jpg" alt="" />
-              <figcaption class="section-material__img--caption">SILICONE</figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure class="section-material__img">
-              <img src="./images/imgs/materials-glass.jpg" alt="" />
-              <figcaption class="section-material__img--caption">GLASS</figcaption>
-            </figure>
-          </div>
+            <div>
+              <h2 class="section-material__header">MATERIALS USED</h2>
+              <div>
+                <figure class="section-material__img">
+                  <picture>
+                    <source
+                      srcset="./images/imgs/desktop/materials-desktop-2.jpg 1x"
+                      media="(min-width:1200px)"
+                    />
 
-          <div class="section-material__descr-block">
-            <h3 class="section-material__descr-block--header">CrystaL Cologne</h3>
-            <p class="section-material__descr-block--paragraph">
-              Nature moves in cycles. Pulses. Patterns
-            </p>
-            <p class="section-material__descr-block--paragraph">
-              There is wisdom to following the steps of this dance—to learning the rhythms of
-              natural processes. Noting how they occur, and allowing them their pace, without rush
-              or force.
-            </p>
+                    <img src="./images/imgs/materials-paper.jpg" alt="" />
+                  </picture>
+
+                  <figcaption class="section-material__img--caption">PAPER</figcaption>
+                </figure>
+                <figure class="section-material__img">
+                  <picture>
+                    <source
+                      srcset="./images/imgs/desktop/materials-desktop-3.jpg 1x"
+                      media="(min-width:1200px)"
+                    />
+
+                    <img src="./images/imgs/materials-silicone.jpg" alt="" />
+                  </picture>
+
+                  <figcaption class="section-material__img--caption">SILICONE</figcaption>
+                </figure>
+                <div>
+                  <figure class="section-material__img">
+                    <picture>
+                      <source
+                        srcset="./images/imgs/desktop/materials-desktop-4.jpg 1x"
+                        media="(min-width:1200px)"
+                      />
+
+                      <img src="./images/imgs/materials-glass.jpg" alt="" />
+                    </picture>
+
+                    <figcaption class="section-material__img--caption">GLASS</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="section-material__descr-block">
+              <h3 class="section-material__descr-block--header">CrystaL Cologne</h3>
+              <p class="section-material__descr-block--paragraph">
+                Nature moves in cycles. Pulses. Patterns
+              </p>
+              <p class="section-material__descr-block--paragraph">
+                There is wisdom to following the steps of this dance—to learning the rhythms of
+                natural processes. Noting how they occur, and allowing them their pace, without rush
+                or force.
+              </p>
+            </div>
           </div>
         </div>
       </section>

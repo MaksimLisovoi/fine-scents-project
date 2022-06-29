@@ -2,16 +2,104 @@
   padding-top: 100px;
   padding-bottom: 130px;
   background-color: $gallery-background-color;
+
+  @include for-size(desktop) {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
 }
 
 .section-gallery__header {
   @extend .section-h3;
 
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   color: $gallery-text-color;
+
+  @include for-size(desktop) {
+    position: absolute;
+  }
+}
+.section-gallery__gallery {
+  @include for-size(desktop) {
+    position: relative;
+    display: flex;
+    margin-left: 220px;
+  }
+}
+.slider-controls__position {
+  position: relative;
+}
+.section-gallery__picture-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding-bottom: 40px;
+}
+.margin-right-200 {
+  margin-right: 200px;
+}
+.section-gallery__slideshow-header {
+  display: none;
+  @include for-size(desktop) {
+    display: block;
+    position: absolute;
+
+    font-family: 'Cormorant';
+    font-weight: 700;
+    font-size: 86px;
+    line-height: 0.8;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+    color: rgba(229, 223, 211, 0.5);
+  }
+}
+.section-gallery__slideshow-header.top {
+  top: 40%;
+  left: -21%;
+}
+.section-gallery__slideshow-header.bottom {
+  top: 50%;
+  left: -4%;
+}
+.section-gallery__slideshow-controls {
+  // position: absolute;
+  // display: flex;
+  // justify-content: space-between;
+}
+.section-gallery__slideshow-btn {
+  position: absolute;
+  bottom: 30%;
+}
+.section-gallery__slideshow-btn.rigth {
+  right: 0;
+}
+.section-gallery__description-block {
+  display: none;
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 24px;
+
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: rgba(229, 223, 211, 0.5);
+  }
 }
 .section-gallery__gallery--image {
   margin: 0 auto;
+}
+.section-gallery__picture-desktop {
+  display: none;
+  @include for-size(desktop) {
+    display: block;
+  }
 }
 .section-gallery__pagination {
   text-align: center;
@@ -19,6 +107,12 @@
 
   padding-top: 60px;
   padding-bottom: 40px;
+
+  @include for-size(desktop) {
+    width: 80px;
+    padding-top: 0;
+    padding-bottom: 9px;
+  }
 }
 .section-gallery__pagination--page {
   font-family: 'Roboto';
