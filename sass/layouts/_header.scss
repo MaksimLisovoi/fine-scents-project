@@ -1,4 +1,5 @@
 .header__page {
+  // display: none;
   max-width: 600px;
   padding-bottom: 40px;
   margin-right: auto;
@@ -9,6 +10,7 @@
   background-color: $primary-gray-color;
 
   @include for-size(desktop) {
+    overflow-x: hidden;
     max-width: 1920px;
     height: 100vh;
     background-image: url(../../images/imgs/header-hero-desktop.jpg);

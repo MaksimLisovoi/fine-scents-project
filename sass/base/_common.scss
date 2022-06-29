@@ -98,8 +98,12 @@ img {
   text-transform: uppercase;
 
   margin-bottom: 30px;
+
+  @include for-size(desktop) {
+    font-size: 18px;
+  }
 }
 
-main {
-  display: none;
-}
+// main {
+//   display: none;
+// }

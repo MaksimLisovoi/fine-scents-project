@@ -217,6 +217,7 @@
         <div class="navigation-desktop">
           <nav class="navigation-desktop__block">
             <a class="navigation-desktop__logo" href="index.html">
+              -->
               <svg width="150" viewBox="0 0 190 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0.0432992 104.462H0.822696C1.90519 104.462 2.03509 104.375 2.03509 103.376V91.1695C2.03509 90.1704 1.90519 90.0835 0.822696 90.0835H0.0432992V89.9097H9.39608C9.78578 89.9097 9.82908 89.9532 10.0023 90.0835L9.91568 88.6934H10.1322L10.5652 94.6881H10.1755L10.0889 93.2546C9.95898 91.0392 8.18368 90.3007 6.01868 90.3007H3.29079C3.55059 90.5613 3.76709 90.9088 3.76709 91.3867V97.5116H4.67639C5.93209 97.5116 7.49088 97.2944 7.49088 95.3397V94.1234H7.66408V100.9H7.44758V100.075C7.44758 98.6411 6.45168 97.9026 4.63309 97.9026H3.72379V103.463C3.72379 104.462 3.85369 104.549 4.93619 104.549H6.40838V104.723H0V104.462H0.0432992Z"
@@ -307,17 +308,17 @@
               </div>
             </div>
             <div class="navigation-desktop__item account">
-              <div class="shop-header-position">
+              <div class="flex-space-between-position">
                 <h2 class="navigation-desktop__header">account</h2>
                 <button class="navigation-desktop__button">close</button>
               </div>
               <div class="account-block">
-                <div class="shop-header-position btn-position">
+                <div class="flex-space-between-position btn-position">
                   <button class="account-block__btn active">Sign in</button>
                   <button class="account-block__btn">Create account</button>
                 </div>
                 <div class="account__sign-in-form">
-                  <form action="">
+                  <form>
                     <label>
                       <input
                         type="email"
@@ -346,52 +347,170 @@
               </div>
             </div>
             <div class="navigation-desktop__item basket">
-              <div class="account-header-position">
+              <div class="flex-space-between-position">
                 <h2 class="navigation-desktop__header color-white">basket</h2>
                 <button class="navigation-desktop__button color-white">close</button>
               </div>
               <div class="basket-block">
                 <div class="basket-item">
-                  <div class="price-position">
-                    <div>
-                      <img src="./images/imgs/desktop-menu/basket-img.jpg" alt="" />
-                    </div>
-                    <div>
+                  <div class="basket-item__block-position">
+                    <div class="basket-name-position">
+                      <img
+                        class="basket-item__img"
+                        src="./images/imgs/desktop-menu/basket-img.jpg"
+                        alt=""
+                      />
                       <div>
-                        <h3 class="basket-item__title">Room Spray</h3>
-                        <span class="basket-item__name">Mayfair Affair</span>
-                      </div>
-                      <div class="basket-item__amount-block">
-                        <button class="basket-item__amount-btn">
-                          <svg
-                            width="14"
-                            height="14"
-                            viewBox="0 0 14 2"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M14 0H0V2H14V0Z" fill="#E5DFD3" />
-                          </svg></button
-                        ><span class="basket-item__amount">1</span
-                        ><button class="basket-item__amount-btn">
-                          <svg
-                            width="14"
-                            height="14"
-                            viewBox="0 0 14 14"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#E5DFD3" />
-                          </svg>
-                        </button>
+                        <div class="basket-item__name-block">
+                          <h3 class="basket-item__title">Room Spray</h3>
+                          <span class="basket-item__name">Mayfair Affair</span>
+                        </div>
+                        <div class="basket-item__amount-block">
+                          <button class="basket-item__amount-btn">
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 2"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M14 0H0V2H14V0Z" fill="#E5DFD3" />
+                            </svg></button
+                          ><span class="basket-item__amount">1</span
+                          ><button class="basket-item__amount-btn">
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#E5DFD3" />
+                            </svg>
+                          </button>
+                        </div>
                       </div>
                     </div>
-                      </div>
+                    <div class="basket-price__block-position">
                       <span class="basket-item__price">$120</span>
                       <button class="basket-item__remove-btn">Remove</button>
                     </div>
                   </div>
                 </div>
+                <div class="basket-item">
+                  <div class="basket-item__block-position">
+                    <div class="basket-name-position">
+                      <img
+                        class="basket-item__img"
+                        src="./images/imgs/desktop-menu/basket-img.jpg"
+                        alt=""
+                      />
+                      <div>
+                        <div class="basket-item__name-block">
+                          <h3 class="basket-item__title">Room Spray</h3>
+                          <span class="basket-item__name">Mayfair Affair</span>
+                        </div>
+                        <div class="basket-item__amount-block">
+                          <button class="basket-item__amount-btn">
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 2"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M14 0H0V2H14V0Z" fill="#E5DFD3" />
+                            </svg></button
+                          ><span class="basket-item__amount">1</span
+                          ><button class="basket-item__amount-btn">
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#E5DFD3" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basket-price__block-position">
+                      <span class="basket-item__price">$120</span>
+                      <button class="basket-item__remove-btn">Remove</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="basket-item">
+                  <div class="basket-item__block-position">
+                    <div class="basket-name-position">
+                      <img
+                        class="basket-item__img"
+                        src="./images/imgs/desktop-menu/basket-img.jpg"
+                        alt=""
+                      />
+                      <div>
+                        <div class="basket-item__name-block">
+                          <h3 class="basket-item__title">Room Spray</h3>
+                          <span class="basket-item__name">Mayfair Affair</span>
+                        </div>
+                        <div class="basket-item__amount-block">
+                          <button class="basket-item__amount-btn">
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 2"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M14 0H0V2H14V0Z" fill="#E5DFD3" />
+                            </svg></button
+                          ><span class="basket-item__amount">1</span
+                          ><button class="basket-item__amount-btn">
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#E5DFD3" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="basket-price__block-position">
+                      <span class="basket-item__price">$120</span>
+                      <button class="basket-item__remove-btn">Remove</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-space-between-position">
+                  <div class="basket-block__dilivery">
+                    <label class="basket-block__dilivery--option" for="delivery">Delivery:</label>
+                    <select
+                      class="basket-block__dilivery--option select"
+                      id="delivery"
+                      name="delivery"
+                    >
+                      <option value="xs">Extra Small</option>
+                      <option value="s">Small</option>
+                      <option value="m" selected>2 ~ 5 day</option>
+                      <option value="l">Large</option>
+                    </select>
+                  </div>
+                  <div class="basket-block__dilivery-price">
+                    <span class="basket-block__dilivery--option">$ 5,50</span>
+                  </div>
+                </div>
+                <div class="basket-block__total flex-space-between-position">
+                  <h3 class="basket-block__total-header">Total</h3>
+                  <span class="basket-block__total-sum">$ 485,50</span>
+                </div>
+
+                <button class="basket-block__btn">checkout</button>
               </div>
             </div>
           </nav>
@@ -410,59 +529,205 @@
             Create scented stories tailored to any and every space. Fragrances that set the mood and
             inspire scented memories. Let our house inspire your home.
           </p>
+          <div class="bestseller-cards__block">
+            <div class="bestseller__card">
+              <div class="bestseller__picture-block">
+                <picture>
+                  <source
+                    srcset="./images/imgs/desktop/bestseller-desktop-1.jpg 1x"
+                    media="(min-width:1200px)"
+                  />
 
-          <div class="bestseller__card">
-            <div class="bestseller__picture-block">
-              <img class="bestseller__img" src="./images/product1.jpg" alt="" />
-              <div class="bestseller__buttons-block">
-                <button class="navigation__button">
-                  <svg
-                    width="52"
-                    height="52"
-                    viewBox="0 0 52 52"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x="52"
-                      y="52"
+                  <source media="(max-width: 600px)" srcset="./images/product1.jpg" />
+                  <img class="bestseller__img" src="./images/product1.jpg" alt="" />
+                </picture>
+                <div class="bestseller__buttons-block">
+                  <button class="navigation__button">
+                    <svg
                       width="52"
                       height="52"
-                      transform="rotate(-180 52 52)"
-                      fill="#333333"
-                    />
-                    <path
-                      d="M20 26L29.6491 16L31 17.4L22.7018 26L31 34.6L29.6491 36L20 26Z"
-                      fill="#E5DFD3"
-                    />
-                  </svg>
-                </button>
-                <button class="navigation__button">
-                  <svg
-                    width="52"
-                    height="52"
-                    viewBox="0 0 52 52"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="52" height="52" transform="matrix(1 0 0 -1 0 52)" fill="#333333" />
-                    <path
-                      d="M32 26L22.3509 16L21 17.4L29.2982 26L21 34.6L22.3509 36L32 26Z"
-                      fill="#E5DFD3"
-                    />
-                  </svg>
-                </button>
+                      viewBox="0 0 52 52"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="52"
+                        y="52"
+                        width="52"
+                        height="52"
+                        transform="rotate(-180 52 52)"
+                        fill="#333333"
+                      />
+                      <path
+                        d="M20 26L29.6491 16L31 17.4L22.7018 26L31 34.6L29.6491 36L20 26Z"
+                        fill="#E5DFD3"
+                      />
+                    </svg>
+                  </button>
+                  <button class="navigation__button">
+                    <svg
+                      width="52"
+                      height="52"
+                      viewBox="0 0 52 52"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        width="52"
+                        height="52"
+                        transform="matrix(1 0 0 -1 0 52)"
+                        fill="#333333"
+                      />
+                      <path
+                        d="M32 26L22.3509 16L21 17.4L29.2982 26L21 34.6L22.3509 36L32 26Z"
+                        fill="#E5DFD3"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="bestseller__price-block">
-              <div>
-                <h3 class="bestseller__price-block--title">Room Spray</h3>
-                <span class="bestseller__price-block--name">Mayfair Affair</span>
+              <div class="bestseller__price-block">
+                <div>
+                  <h3 class="bestseller__price-block--title">Room Spray</h3>
+                  <span class="bestseller__price-block--name">Mayfair Affair</span>
+                </div>
+                <span class="bestseller__price-block--title">$120</span>
               </div>
-              <span class="bestseller__price-block--title">$120</span>
-            </div>
 
-            <button class="button">QUICK SHOP</button>
+              <button class="button">QUICK SHOP</button>
+            </div>
+            <div class="bestseller__card desktop">
+              <div class="bestseller__picture-block">
+                <picture>
+                  <source
+                    srcset="./images/imgs/desktop/bestseller-desktop-2.jpg 1x"
+                    media="(min-width:1200px)"
+                  />
+
+                  <source media="(max-width: 600px)" srcset="./images/product2.jpg" />
+                  <img class="bestseller__img" src="./images/product2.jpg" alt="" />
+                </picture>
+                <div class="bestseller__buttons-block">
+                  <button class="navigation__button">
+                    <svg
+                      width="52"
+                      height="52"
+                      viewBox="0 0 52 52"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="52"
+                        y="52"
+                        width="52"
+                        height="52"
+                        transform="rotate(-180 52 52)"
+                        fill="#333333"
+                      />
+                      <path
+                        d="M20 26L29.6491 16L31 17.4L22.7018 26L31 34.6L29.6491 36L20 26Z"
+                        fill="#E5DFD3"
+                      />
+                    </svg>
+                  </button>
+                  <button class="navigation__button">
+                    <svg
+                      width="52"
+                      height="52"
+                      viewBox="0 0 52 52"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        width="52"
+                        height="52"
+                        transform="matrix(1 0 0 -1 0 52)"
+                        fill="#333333"
+                      />
+                      <path
+                        d="M32 26L22.3509 16L21 17.4L29.2982 26L21 34.6L22.3509 36L32 26Z"
+                        fill="#E5DFD3"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="bestseller__price-block">
+                <div>
+                  <h3 class="bestseller__price-block--title">Scented Candle</h3>
+                  <span class="bestseller__price-block--name">Hyde in the Park</span>
+                </div>
+                <span class="bestseller__price-block--title">$120</span>
+              </div>
+
+              <button class="button">QUICK SHOP</button>
+            </div>
+            <div class="bestseller__card desktop">
+              <div class="bestseller__picture-block">
+                <picture>
+                  <source
+                    srcset="./images/imgs/desktop/bestseller-desktop-3.jpg 1x"
+                    media="(min-width:1200px)"
+                  />
+
+                  <source media="(max-width: 600px)" srcset="./images/product3.jpg" />
+                  <img class="bestseller__img" src="./images/product3.jpg" alt="" />
+                </picture>
+                <div class="bestseller__buttons-block">
+                  <button class="navigation__button">
+                    <svg
+                      width="52"
+                      height="52"
+                      viewBox="0 0 52 52"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="52"
+                        y="52"
+                        width="52"
+                        height="52"
+                        transform="rotate(-180 52 52)"
+                        fill="#333333"
+                      />
+                      <path
+                        d="M20 26L29.6491 16L31 17.4L22.7018 26L31 34.6L29.6491 36L20 26Z"
+                        fill="#E5DFD3"
+                      />
+                    </svg>
+                  </button>
+                  <button class="navigation__button">
+                    <svg
+                      width="52"
+                      height="52"
+                      viewBox="0 0 52 52"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        width="52"
+                        height="52"
+                        transform="matrix(1 0 0 -1 0 52)"
+                        fill="#333333"
+                      />
+                      <path
+                        d="M32 26L22.3509 16L21 17.4L29.2982 26L21 34.6L22.3509 36L32 26Z"
+                        fill="#E5DFD3"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="bestseller__price-block">
+                <div>
+                  <h3 class="bestseller__price-block--title">Compact diffuser</h3>
+                  <span class="bestseller__price-block--name">Turnagain Lane</span>
+                </div>
+                <span class="bestseller__price-block--title">$120</span>
+              </div>
+
+              <button class="button">QUICK SHOP</button>
+            </div>
           </div>
         </div>
       </section>
@@ -471,12 +736,14 @@
 
       <section class="section-about">
         <div class="container">
-          <h2 class="section-h3">WHO WE ARE</h2>
+          <div class="section-about__description-container">
+            <h2 class="section-h3 section-about__header">WHO WE ARE</h2>
 
-          <h3 class="section-about__main-paragraph">
-            We source ingredients from the most reputable suppliers across the globe, then marry
-            contemporary technology.
-          </h3>
+            <h3 class="section-about__main-paragraph">
+              We source ingredients from the most reputable suppliers across the globe, then marry
+              contemporary technology.
+            </h3>
+          </div>
           <div class="section-about__secondary-paragraph--margin">
             <p class="section-about__secondary-paragraph">
               Our objective has always been to formulate skin, hair and body care products of the

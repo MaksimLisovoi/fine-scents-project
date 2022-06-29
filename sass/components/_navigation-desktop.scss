@@ -1,13 +1,20 @@
 .navigation-desktop {
   padding-left: 86px;
+
+  @media (max-width: 800px) {
+    display: none;
+  }
 }
 .navigation-desktop__block {
-  position: relative;
+  // position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
+  // justify-content: space-between;
+  // overflow-x: hidden;
   // padding-top: 36px;
 }
 .navigation-desktop__logo {
+  display: none;
   padding-top: 36px;
 }
 .navigation-desktop__item {
@@ -18,43 +25,59 @@
   transition: transform 500ms ease-in-out;
 }
 .navigation-desktop__item.shop {
-  display: none;
-  transform: translateX(295%);
+  // display: none;
+  position: absolute;
+  z-index: 4;
+  width: 240px;
+  transform: translateX(-100px);
   // transform: translateX(250%);
   padding-left: 30px;
 
   background-color: $secondary-gray-background-color;
 }
 .shop:hover {
-  transform: translateX(250%);
+  transform: translateX(-240px);
 }
 .navigation-desktop__item.about {
-  display: none;
-  transform: translateX(215%);
+  // display: none;
+  transform: translateX(-10px);
+  width: 248px;
   padding-left: 26px;
   padding-right: 30px;
+  position: absolute;
+  z-index: 5;
 
   background-color: $secondary-text-color;
 }
 .about:hover {
-  transform: translateX(170%);
+  transform: translateX(-170px);
 }
 .navigation-desktop__item.account {
-  display: none;
+  // display: none;
+  width: 455px;
   background-color: #afafaf;
   padding-left: 17px;
   padding-right: 17px;
-  transform: translateX(92%);
+  transform: translateX(280px);
+  position: absolute;
+  z-index: 6;
   // transform: translateX(0%);
 }
 .account:hover {
-  transform: translateX(50%);
+  transform: translateX(-80px);
 }
 .navigation-desktop__item.basket {
-  width: 1041px;
+  width: 565px;
   background-color: #383838;
   padding-left: 23px;
-  transform: translateX(91%);
+  padding-right: 23px;
+  padding-bottom: 66px;
+  transform: translateX(480px);
+  z-index: 7;
+  position: absolute;
+
+  overflow-y: scroll;
+  // transform: translateX(0);
 }
 .basket:hover {
   transform: translateX(0);
@@ -67,163 +90,4 @@
   letter-spacing: 0.04em;
 
   text-transform: uppercase;
-}
-
-//SHOP//
-
-.shop__list {
-  margin-top: 90px;
-}
-.shop__list > li:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.shop__list--header {
-  font-family: 'Cormorant';
-  font-weight: 700;
-  font-size: 24px;
-  letter-spacing: 0.04em;
-
-  color: #f7f5f3;
-}
-
-.shop-item {
-  width: 228px;
-  // height: 274px;
-  height: calc((100vh - 240px) / 3);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.shop-item.scents {
-  background-image: url(../../images/imgs/desktop-menu/scents-shop.jpg);
-  // background-size: 228px 274px;
-}
-.shop-item.applying {
-  background-image: url(../../images/imgs/desktop-menu/applying-shop.jpg);
-}
-.shop-item.all {
-  background-image: url(../../images/imgs/desktop-menu/all-shop.jpg);
-}
-
-//ABOUT//
-
-.navigation-desktop__section-about {
-  padding-top: 145px;
-  padding-bottom: 570px;
-}
-.about-header {
-  font-family: 'Cormorant';
-  font-weight: 600;
-  font-size: 38px;
-  letter-spacing: -0.03em;
-
-  width: 110px;
-  margin-bottom: 45px;
-}
-.about-paragraph {
-  font-family: 'Roboto';
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 1.4;
-
-  width: 190px;
-
-  letter-spacing: 0.02em;
-}
-
-.about-paragraph:not(:last-child) {
-  margin-bottom: 25px;
-}
-
-//ACCOUNT//
-.shop-header-position {
-  display: flex;
-  justify-content: space-between;
-}
-.navigation-desktop__button {
-  @extend .navigation-desktop__header;
-  padding: 0;
-}
-
-.account__sign-in-form {
-  // display: none;
-}
-.account__sign-in-form--input {
-  width: 340px;
-  height: 50px;
-  padding-left: 24px;
-
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.04em;
-
-  border: none;
-  background: rgba(247, 245, 243, 0.7);
-}
-.account__sign-in-form--input.margin-bottom-40 {
-  margin-bottom: 40px;
-}
-.account__sign-in-form--input::placeholder {
-  color: #000000;
-}
-.account__sign-in-form--paragraph {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.4;
-  letter-spacing: 0.04em;
-
-  color: #060606;
-}
-
-.account__sign-in-form--btn {
-  width: 340px;
-  height: 50px;
-  margin-top: 26px;
-
-  font-family: 'Roboto';
-  font-weight: 300;
-  font-size: 16px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  color: #f7f5f3;
-  background: #000000;
-}
-
-.forgot-pass {
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.04em;
-  text-decoration-line: underline;
-
-  margin-top: 30px;
-  margin-bottom: 55px;
-}
-
-.account-block {
-  padding-right: 43px;
-  padding-left: 43px;
-  padding-top: 150px;
-}
-.account-block__btn {
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.04em;
-
-  color: rgba(0, 0, 0, 0.3);
-}
-.shop-header-position.btn-position {
-  margin-bottom: 32px;
-}
-.account-block__btn.active {
-  text-decoration-line: underline;
-
-  color: #000000;
 }

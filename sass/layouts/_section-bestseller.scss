@@ -4,6 +4,11 @@
   padding-bottom: 100px;
 
   text-align: center;
+
+  @include for-size(desktop) {
+    padding-top: 150px;
+    padding-bottom: 190px;
+  }
 }
 .bestseller__title {
   font-family: 'Cormorant', sans-serif;
@@ -12,6 +17,11 @@
   line-height: 1.02;
   letter-spacing: -0.03em;
   margin-bottom: 30px;
+
+  @include for-size(desktop) {
+    font-size: 82px;
+    margin-bottom: 50px;
+  }
 }
 
 .bestseller__description {
@@ -20,11 +30,48 @@
   font-weight: 300;
   line-height: 1.6;
   letter-spacing: 0.04em;
+
+  @include for-size(desktop) {
+    font-size: 16px;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+}
+.bestseller-cards__block {
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    border-top: 1px solid #868483;
+  }
+}
+.bestseller__card {
+  @include for-size(desktop) {
+    width: 100%;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+}
+.bestseller__card.desktop {
+  display: none;
+  @include for-size(desktop) {
+    display: block;
+  }
+}
+.bestseller__card:not(:last-child) {
+  @include for-size(desktop) {
+    margin-right: 24px;
+  }
 }
 .bestseller__picture-block {
   padding-top: 72px;
   padding-bottom: 55px;
   border-bottom: 1px solid $secondary-text-color;
+
+  @include for-size(desktop) {
+    padding-top: 0;
+  }
 }
 .bestseller__img {
   margin: 0 auto;

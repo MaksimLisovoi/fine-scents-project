@@ -3,8 +3,24 @@
   padding-bottom: 160px;
 
   background-color: $gray-background-color;
-}
 
+  @include for-size(desktop) {
+    padding-top: 180px;
+    padding-bottom: 240px;
+  }
+}
+.section-about__header {
+  @include for-size(desktop) {
+    height: 20px;
+  }
+}
+.section-about__description-container {
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
 .section-about__main-paragraph {
   font-family: 'Cormorant';
   font-weight: 700;
@@ -13,6 +29,19 @@
   letter-spacing: -0.03em;
 
   margin-bottom: 100px;
+
+  @include for-size(desktop) {
+    width: 966px;
+    font-size: 82px;
+    line-height: 1.02;
+  }
+}
+.section-about__secondary-paragraph--margin {
+  @include for-size(desktop) {
+    margin-left: 330px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .section-about__secondary-paragraph {
   font-family: 'Roboto';
@@ -20,6 +49,11 @@
   font-size: 12px;
   line-height: 1.6;
   letter-spacing: 0.04em;
+
+  @include for-size(desktop) {
+    font-size: 16px;
+    width: 416px;
+  }
 }
 
 .section-about__secondary-paragraph:not(:last-child) {
