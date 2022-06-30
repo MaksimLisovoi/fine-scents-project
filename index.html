@@ -917,10 +917,10 @@
             considered design improves lives. We source materials from the most reputable suppliers
             across the globe and marry contemporary technology.
           </p>
-          <div class="section-material__img-block">
+          <div class="section-material__block">
             <div>
               <h2 class="section-material__header">MATERIALS USED</h2>
-              <div>
+              <div class="section-material__img-block">
                 <figure class="section-material__img">
                   <picture>
                     <source
@@ -945,20 +945,19 @@
 
                   <figcaption class="section-material__img--caption">SILICONE</figcaption>
                 </figure>
-                <div>
-                  <figure class="section-material__img">
-                    <picture>
-                      <source
-                        srcset="./images/imgs/desktop/materials-desktop-4.jpg 1x"
-                        media="(min-width:1200px)"
-                      />
 
-                      <img src="./images/imgs/materials-glass.jpg" alt="" />
-                    </picture>
+                <figure class="section-material__img">
+                  <picture>
+                    <source
+                      srcset="./images/imgs/desktop/materials-desktop-4.jpg 1x"
+                      media="(min-width:1200px)"
+                    />
 
-                    <figcaption class="section-material__img--caption">GLASS</figcaption>
-                  </figure>
-                </div>
+                    <img src="./images/imgs/materials-glass.jpg" alt="" />
+                  </picture>
+
+                  <figcaption class="section-material__img--caption">GLASS</figcaption>
+                </figure>
               </div>
             </div>
             <div class="section-material__descr-block">
@@ -981,70 +980,76 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer__newsletter">
-          <h2 class="footer__newsletter--header">newsletter</h2>
+        <div class="footer-flex__desktop">
+          <div class="footer__newsletter">
+            <h2 class="footer__newsletter--header">newsletter</h2>
 
-          <form name="subscribe" class="footer__form">
-            <label>
-              <input
-                type="email"
-                name="mail"
-                id="mail"
-                class="footer__form--input"
-                placeholder="Email"
-              />
-            </label>
-            <label class="footer__form--checkbox">
-              <input type="checkbox" name="policy" value="policy" checked />
-              Subscribe to receive communications from Fine Scents about our products and services.
-              By subscribing, you confirm you have read and accept our privacy policy
-            </label>
-          </form>
-        </div>
-
-        <div class="footer-features">
-          <div class="footer-features__support">
-            <h3 class="footer__header">Support</h3>
-
-            <div class="footer-features__block"></div>
-            <a class="footer-features__link" href="">Contact us</a>
-            <a class="footer-features__link" href="">Shipping</a>
-            <a class="footer-features__link" href="">Privacy policy</a>
-            <a class="footer-features__link" href="">Our story</a>
-            <a class="footer-features__link" href="">FAQs</a>
+            <form name="subscribe" class="footer__form">
+              <label>
+                <input
+                  type="email"
+                  name="mail"
+                  id="mail"
+                  class="footer__form--input"
+                  placeholder="Email"
+                />
+              </label>
+              <label class="footer__form--checkbox">
+                <input type="checkbox" name="policy" value="policy" checked />
+                Subscribe to receive communications from Fine Scents about our products and
+                services. By subscribing, you confirm you have read and accept our privacy policy
+              </label>
+            </form>
           </div>
-          <div class="footer-features__settings">
-            <h3 class="footer__header">Settings</h3>
 
-            <div class="footer-features__block"></div>
-            <div class="footer-features__language">
-              <label for="language"></label>
-              <select class="footer-features__item" id="language" name="language">
-                <option value="English">English</option>
-                <option value="Espanol">Espanol</option>
-              </select>
+          <div class="footer-features">
+            <div class="footer-features__support">
+              <h3 class="footer__header">Support</h3>
+
+              <ul class="footer-features__block">
+                <li><a class="footer-features__link" href="">Contact us</a></li>
+                <li><a class="footer-features__link" href="">Shipping</a></li>
+                <li><a class="footer-features__link" href="">Privacy policy</a></li>
+                <li><a class="footer-features__link" href="">Our story</a></li>
+                <li><a class="footer-features__link" href="">FAQs</a></li>
+              </ul>
             </div>
-            <div>
-              <label for="currancy"></label>
-              <select class="footer-features__item" id="currancy" name="currancy">
-                <option value="USD">$USD</option>
-                <option value="EU">€EU</option>
-              </select>
+            <div class="footer-features__settings">
+              <h3 class="footer__header">Settings</h3>
+
+              <div class="footer-features__block">
+                <div class="footer-features__language">
+                  <label for="language"></label>
+                  <select class="footer-features__item" id="language" name="language">
+                    <option value="English">English</option>
+                    <option value="Espanol">Espanol</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="currancy"></label>
+                  <select class="footer-features__item" id="currancy" name="currancy">
+                    <option value="USD">$USD</option>
+                    <option value="EU">€EU</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="footer-features__social">
+              <h3 class="footer__header">Social media</h3>
+
+              <ul class="footer-features__block">
+                <li><a class="footer-features__link" href="">Instagram</a></li>
+                <li><a class="footer-features__link" href="">Facebook</a></li>
+                <li><a class="footer-features__link" href="">Twitter</a></li>
+                <li><a class="footer-features__link" href="">YouTube</a></li>
+              </ul>
             </div>
           </div>
-          <div class="footer-features__social">
-            <h3 class="footer__header">Social media</h3>
-            <div class="footer-features__block"></div>
-            <a class="footer-features__link" href="">Instagram</a>
-            <a class="footer-features__link" href="">Facebook</a>
-            <a class="footer-features__link" href="">Twitter</a>
-            <a class="footer-features__link" href="">YouTube</a>
-          </div>
         </div>
-
         <div class="footer-logo">
           <span
             ><svg
+              class="footer-logo__svg
               width="126"
               height="12"
               viewBox="0 0 126 12"
