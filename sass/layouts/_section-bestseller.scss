@@ -7,7 +7,7 @@
 
   @include for-size(desktop) {
     padding-top: 150px;
-    padding-bottom: 190px;
+    padding-bottom: 114px;
   }
 }
 .bestseller__title {
@@ -19,7 +19,7 @@
   margin-bottom: 30px;
 
   @include for-size(desktop) {
-    font-size: 82px;
+    font-size: 70px;
     margin-bottom: 50px;
   }
 }
@@ -35,22 +35,25 @@
     font-size: 16px;
     width: 50%;
     margin: 0 auto;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
   }
 }
 .bestseller-cards__block {
   @include for-size(desktop) {
     display: flex;
     justify-content: center;
-    padding-top: 120px;
+    padding-top: 50px;
+    padding-right: 38px;
+    padding-left: 38px;
     border-top: 1px solid #868483;
   }
 }
 .bestseller__card {
+  max-width: 500px;
+  margin: 0 auto;
   @include for-size(desktop) {
-    width: 100%;
-    padding-right: 38px;
-    padding-left: 38px;
+    width: calc((100% - 140px * 2) / 3);
+    max-width: 300px;
   }
 }
 .bestseller__card.desktop {
@@ -61,16 +64,17 @@
 }
 .bestseller__card:not(:last-child) {
   @include for-size(desktop) {
-    margin-right: 24px;
+    margin-right: 140px;
   }
 }
 .bestseller__picture-block {
   padding-top: 72px;
-  padding-bottom: 55px;
+  padding-bottom: 50px;
   border-bottom: 1px solid $secondary-text-color;
 
   @include for-size(desktop) {
     padding-top: 0;
+    padding-bottom: 60px;
   }
 }
 .bestseller__img {
@@ -86,8 +90,8 @@
   text-align: left;
 }
 .bestseller__price-block {
-  padding-top: 26px;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 .bestseller__price-block--title {
   margin-bottom: 10px;

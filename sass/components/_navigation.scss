@@ -28,12 +28,15 @@
 // }
 .navigation__button {
   display: block;
-  width: 40px;
-  height: 40px;
+  // width: 20px;
+  // height: 20px;
   background-color: transparent;
   margin: 0;
   padding: 0;
   border: none;
+}
+.navigation__button.btn-account {
+  margin-right: 18px;
 }
 
 .navigation__button.play {
@@ -47,8 +50,7 @@
   display: flex;
 }
 .logo__mobile {
-  padding-right: 60px;
-  padding-left: 88px;
+  padding-left: 27px;
 }
 
 .header__page {
@@ -61,6 +63,7 @@
   left: 0;
 
   width: 100%;
+
   padding-top: 84px;
   padding-bottom: 201px;
 
@@ -105,6 +108,9 @@
   letter-spacing: 0.04em;
 
   margin-top: 32px;
+}
+.burger-menu__list > li::after {
+  content: '→';
 }
 .burger-menu__list > li:not(:last-child) {
   padding-bottom: 20px;

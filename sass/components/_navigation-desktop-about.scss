@@ -4,6 +4,17 @@
   padding-top: 145px;
   // padding-bottom: 570px;
 }
+.about-paragraph.arrow::after {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 12px;
+
+  background-image: url('../../images/section-about-arrow.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .about-header {
   font-family: 'Cormorant';
   font-weight: 600;
@@ -36,6 +47,7 @@
 .navigation-desktop__button {
   @extend .navigation-desktop__header;
   padding: 0;
+  order: -1;
 }
 
 .account__sign-in-form {

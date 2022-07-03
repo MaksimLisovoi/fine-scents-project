@@ -5,8 +5,8 @@
   background-color: $gray-background-color;
 
   @include for-size(desktop) {
-    padding-top: 180px;
-    padding-bottom: 340px;
+    padding-top: 150px;
+    padding-bottom: 240px;
   }
 }
 .section-material__description {
@@ -20,7 +20,8 @@
   margin-bottom: 140px;
 
   @include for-size(desktop) {
-    font-size: 56px;
+    font-size: 50px;
+    max-width: 856px;
 
     margin-top: 80px;
     margin-bottom: 300px;

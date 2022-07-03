@@ -44,13 +44,13 @@
               <h2 class="burger-menu__header">SHOP</h2>
               <ul class="burger-menu__list">
                 <li>
-                  <a href="">Scents →</a>
+                  <a href="">Scents </a>
                 </li>
                 <li>
-                  <a href="">Applying →</a>
+                  <a href="">Applying </a>
                 </li>
                 <li>
-                  <a href="">All →</a>
+                  <a href="">All </a>
                 </li>
               </ul>
             </div>
@@ -60,7 +60,7 @@
               <ul class="burger-menu__list">
                 <li>
                   <a href="./our-mission.html">
-                    <span class="burger-menu-span">Our</span> Charity Mission →</a
+                    <span class="burger-menu-span">Our</span> Charity Mission</a
                   >
                 </li>
               </ul>
@@ -68,6 +68,7 @@
           </div>
         </div>
         <!-- Open burger-navigation -->
+
         <nav class="navigation">
           <button
             data-menu-button
@@ -77,8 +78,8 @@
             aria-controls="burger-navigation__container"
           >
             <svg
-              width="26"
-              height="22"
+              width="24"
+              height="19"
               viewBox="0 0 26 22"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -94,8 +95,8 @@
 
           <a class="logo__mobile" href="index.html">
             <svg
-              width="110"
-              height="61"
+              width="99"
+              height="55"
               viewBox="0 0 110 61"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -147,9 +148,15 @@
             </svg>
           </a>
           <div class="nav__profile">
-            <button class="navigation__button">
+            <button
+              data-account-button
+              type="button"
+              class="navigation__button btn-account"
+              aria-expanded="false"
+              aria-controls="navigation-desktop__item account"
+            >
               <svg
-                width="19"
+                width="17"
                 height="22"
                 viewBox="0 0 17 22"
                 fill="none"
@@ -165,7 +172,13 @@
                 />
               </svg>
             </button>
-            <button class="navigation__button">
+            <button
+              data-basket-button
+              type="button"
+              class="navigation__button btn-basket"
+              aria-expanded="false"
+              aria-controls="navigation-desktop__item basket"
+            >
               <svg
                 width="19"
                 height="22"
@@ -217,7 +230,6 @@
         <div class="navigation-desktop">
           <nav class="navigation-desktop__block">
             <a class="navigation-desktop__logo" href="index.html">
-              -->
               <svg width="150" viewBox="0 0 190 106" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0.0432992 104.462H0.822696C1.90519 104.462 2.03509 104.375 2.03509 103.376V91.1695C2.03509 90.1704 1.90519 90.0835 0.822696 90.0835H0.0432992V89.9097H9.39608C9.78578 89.9097 9.82908 89.9532 10.0023 90.0835L9.91568 88.6934H10.1322L10.5652 94.6881H10.1755L10.0889 93.2546C9.95898 91.0392 8.18368 90.3007 6.01868 90.3007H3.29079C3.55059 90.5613 3.76709 90.9088 3.76709 91.3867V97.5116H4.67639C5.93209 97.5116 7.49088 97.2944 7.49088 95.3397V94.1234H7.66408V100.9H7.44758V100.075C7.44758 98.6411 6.45168 97.9026 4.63309 97.9026H3.72379V103.463C3.72379 104.462 3.85369 104.549 4.93619 104.549H6.40838V104.723H0V104.462H0.0432992Z"
@@ -301,16 +313,26 @@
                   Our mission has always been to inspire, connect and uplift people through
                   fragrance.
                 </p>
-                <p class="about-paragraph">
-                  And so, our work with mental health charities over the past decade is a natural
-                  evolution of this mission.
-                </p>
+                <a href="./our-mission.html">
+                  <p class="about-paragraph arrow">
+                    And so, our work with mental health charities over the past decade is a natural
+                    evolution of this mission.
+                  </p>
+                </a>
               </div>
             </div>
-            <div class="navigation-desktop__item account">
+            <div class="navigation-desktop__item account" data-account-menu>
               <div class="flex-space-between-position">
                 <h2 class="navigation-desktop__header">account</h2>
-                <button class="navigation-desktop__button">close</button>
+                <button
+                  class="navigation-desktop__button"
+                  data-account-button-close
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="navigation-desktop__item account"
+                >
+                  close
+                </button>
               </div>
               <div class="account-block">
                 <div class="flex-space-between-position btn-position">
@@ -346,10 +368,18 @@
                 </div>
               </div>
             </div>
-            <div class="navigation-desktop__item basket">
+            <div class="navigation-desktop__item basket" data-basket-menu>
               <div class="flex-space-between-position">
                 <h2 class="navigation-desktop__header color-white">basket</h2>
-                <button class="navigation-desktop__button color-white">close</button>
+                <button
+                  class="navigation-desktop__button color-white"
+                  data-basket-button-close
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="navigation-desktop__item account"
+                >
+                  close
+                </button>
               </div>
               <div class="basket-block">
                 <div class="basket-item">
@@ -535,7 +565,7 @@
                 <picture>
                   <source
                     srcset="./images/imgs/desktop/bestseller-desktop-1.jpg 1x"
-                    media="(min-width:1200px)"
+                    media="(min-width:800px)"
                   />
 
                   <source media="(max-width: 600px)" srcset="./images/product1.jpg" />
@@ -601,7 +631,7 @@
                 <picture>
                   <source
                     srcset="./images/imgs/desktop/bestseller-desktop-2.jpg 1x"
-                    media="(min-width:1200px)"
+                    media="(min-width:800px)"
                   />
 
                   <source media="(max-width: 600px)" srcset="./images/product2.jpg" />
@@ -667,7 +697,7 @@
                 <picture>
                   <source
                     srcset="./images/imgs/desktop/bestseller-desktop-3.jpg 1x"
-                    media="(min-width:1200px)"
+                    media="(min-width:800px)"
                   />
 
                   <source media="(max-width: 600px)" srcset="./images/product3.jpg" />
@@ -771,7 +801,7 @@
               <picture class="section-gallery__picture-desktop margin-right-200">
                 <source
                   srcset="./images/imgs/desktop/gallery-desktop-2.jpg 1x"
-                  media="(min-width:1200px)"
+                  media="(min-width:800px)"
                 />
                 <img
                   class="section-gallery__gallery--image"
@@ -784,7 +814,7 @@
               <picture class="section-gallery__picture-desktop">
                 <source
                   srcset="./images/imgs/desktop/gallery-desktop-3.jpg 1x"
-                  media="(min-width:1200px)"
+                  media="(min-width:800px)"
                 />
                 <img
                   class="section-gallery__gallery--image"
@@ -797,7 +827,7 @@
               <picture>
                 <source
                   srcset="./images/imgs/desktop/gallery-desktop-1.jpg 1x"
-                  media="(min-width:1200px)"
+                  media="(min-width:800px)"
                 />
                 <img
                   class="section-gallery__gallery--image"
@@ -860,7 +890,7 @@
                 <picture>
                   <source
                     srcset="./images/imgs/desktop/info-desktop-1.jpg 1x"
-                    media="(min-width:1200px)"
+                    media="(min-width:800px)"
                   />
 
                   <img class="section-info__img" src="./images/imgs/section-info-img.jpg" alt="" />
@@ -869,7 +899,7 @@
                 <picture>
                   <source
                     srcset="./images/imgs/desktop/info-desktop-2.jpg 1x"
-                    media="(min-width:1200px)"
+                    media="(min-width:800px)"
                   />
 
                   <img src="./images/imgs/section-info-img2.jpg" alt="" />
@@ -890,7 +920,7 @@
             <picture class="section-info__img-desktop">
               <source
                 srcset="./images/imgs/desktop/info-desktop-3.jpg 1x"
-                media="(min-width:1200px)"
+                media="(min-width:800px)"
               />
 
               <img src="./images/imgs/section-info-img2.jpg" alt="" />
@@ -906,10 +936,10 @@
           <picture>
             <source
               srcset="./images/imgs/desktop/materials-desktop-1.jpg 1x"
-              media="(min-width:1200px)"
+              media="(min-width:800px)"
             />
 
-            <img src="./images/imgs/materials-walls.jpg" alt="" />
+            <img src="./images/imgs/desktop/materials-desktop-1.jpg" alt="" />
           </picture>
 
           <p class="section-material__description">
@@ -925,7 +955,7 @@
                   <picture>
                     <source
                       srcset="./images/imgs/desktop/materials-desktop-2.jpg 1x"
-                      media="(min-width:1200px)"
+                      media="(min-width:800px)"
                     />
 
                     <img src="./images/imgs/materials-paper.jpg" alt="" />
@@ -937,7 +967,7 @@
                   <picture>
                     <source
                       srcset="./images/imgs/desktop/materials-desktop-3.jpg 1x"
-                      media="(min-width:1200px)"
+                      media="(min-width:800px)"
                     />
 
                     <img src="./images/imgs/materials-silicone.jpg" alt="" />
@@ -950,7 +980,7 @@
                   <picture>
                     <source
                       srcset="./images/imgs/desktop/materials-desktop-4.jpg 1x"
-                      media="(min-width:1200px)"
+                      media="(min-width:800px)"
                     />
 
                     <img src="./images/imgs/materials-glass.jpg" alt="" />
@@ -1049,7 +1079,7 @@
         <div class="footer-logo">
           <span
             ><svg
-              class="footer-logo__svg
+              class="footer-logo__svg"
               width="126"
               height="12"
               viewBox="0 0 126 12"

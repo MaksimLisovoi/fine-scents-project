@@ -1,11 +1,12 @@
 .section-gallery {
+  display: none;
   padding-top: 100px;
   padding-bottom: 130px;
   background-color: $gallery-background-color;
 
   @include for-size(desktop) {
-    padding-top: 180px;
-    padding-bottom: 180px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 
@@ -64,6 +65,9 @@
   left: -4%;
 }
 .section-gallery__slideshow-controls {
+  @include for-size(phone) {
+    display: none;
+  }
   // position: absolute;
   // display: flex;
   // justify-content: space-between;

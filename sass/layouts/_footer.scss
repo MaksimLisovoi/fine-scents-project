@@ -120,7 +120,7 @@
     justify-content: space-between;
     width: 50%;
     padding-bottom: 0;
-    padding-right: 116px;
+    // padding-right: 116px;
   }
   // border-bottom: 1px solid rgba(229, 223, 211, 0.5);
 }
@@ -139,6 +139,7 @@
 }
 .footer-features > div {
   // width: 33%;
+  width: 50%;
   @include for-size(phone) {
     width: 50%;
   }

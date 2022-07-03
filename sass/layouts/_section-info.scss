@@ -1,12 +1,13 @@
 .section-info {
+  // display: none;
   padding-top: 100px;
   padding-bottom: 100px;
 
   background-color: $primary-white-color;
 
   @include for-size(desktop) {
-    padding-top: 173px;
-    padding-bottom: 436px;
+    padding-top: 150px;
+    padding-bottom: 100px;
   }
 }
 .section-info__header {
@@ -21,7 +22,7 @@
 
   @include for-size(desktop) {
     width: 526px;
-    font-size: 82px;
+    font-size: 70px;
     line-height: 1.02;
   }
 }
