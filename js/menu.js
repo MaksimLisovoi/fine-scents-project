@@ -11,6 +11,8 @@
   const basketMenuRef = document.querySelector('[data-basket-menu]');
   const basketBtnRefClose = document.querySelector('[data-basket-button-close]');
 
+  const desktopAccountBtnRef = document.querySelector('[desktop-data-account-button]');
+
   menuBtnRef.addEventListener('click', () => {
     const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
 
@@ -32,6 +34,15 @@
 
     accountBtnRef.classList.toggle('is-open');
     accountBtnRef.setAttribute('aria-expanded', !expanded);
+
+    accountMenuRef.classList.toggle('is-open');
+  });
+
+  desktopAccountBtnRef.addEventListener('click', () => {
+    const expanded = desktopAccountBtnRef.getAttribute('aria-expanded') === 'true' || false;
+
+    desktopAccountBtnRef.classList.toggle('is-open');
+    desktopAccountBtnRef.setAttribute('aria-expanded', !expanded);
 
     accountMenuRef.classList.toggle('is-open');
   });

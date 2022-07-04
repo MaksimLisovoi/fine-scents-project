@@ -22,6 +22,19 @@
     display: none;
   }
 }
+.navigation-our-mission {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100%;
+  align-items: baseline;
+  padding-top: 40px;
+  padding-left: 18px;
+  padding-right: 18px;
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}
 
 // .navigation-desktop__shop:hover {
 //   transform: translateX(0);
@@ -40,10 +53,11 @@
 }
 
 .navigation__button.play {
+  margin: 0 auto;
   margin-bottom: 38px;
 }
 .navigation__button.arrow {
-  margin-right: 0 auto;
+  margin: 0 auto;
 }
 
 .nav__profile {

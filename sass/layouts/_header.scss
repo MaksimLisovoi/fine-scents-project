@@ -28,9 +28,13 @@
 }
 
 .header__controls {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+
+  text-align: center;
+  margin: 0 auto;
+  width: 80px;
 
   @include for-size(desktop) {
     display: none;

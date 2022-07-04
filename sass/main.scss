@@ -1,7 +1,6 @@
 @import './utils/variables';
 @import './utils/mixins';
 @import './base/common';
-@import './page-our-mission/our-mission';
 @import './layouts/container';
 @import './components/navigation';
 @import './layouts/header';
@@ -17,4 +16,6 @@
 @import './components/navigation-desktop';
 @import './components/navigation-desktop-shop';
 @import './components/navigation-desktop-about';
+@import './components/navigation-desktop-account';
 @import './components/navigation-desktop-basket';
+@import './page-our-mission/our-mission';
