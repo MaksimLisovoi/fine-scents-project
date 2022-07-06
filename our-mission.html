@@ -280,8 +280,28 @@
         <div class="navigation-desktop mission-page">
           <nav>
             <ul class="navigation-desktop__list">
-              <li><button class="navigation-desktop__header">shop</button></li>
-              <li><button class="navigation-desktop__header">about</button></li>
+              <li>
+                <button
+                  class="navigation-desktop__header"
+                  desktop-data-shop-button
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="navigation-desktop__item shop"
+                >
+                  shop
+                </button>
+              </li>
+              <li>
+                <button
+                  class="navigation-desktop__header"
+                  desktop-data-about-button
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="navigation-desktop__item about"
+                >
+                  about
+                </button>
+              </li>
               <li>
                 <button
                   desktop-data-account-button
@@ -293,12 +313,33 @@
                   account
                 </button>
               </li>
-              <li><button class="navigation-desktop__header">basket</button></li>
+              <li>
+                <button
+                  class="navigation-desktop__header"
+                  desktop-data-basket-button
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="navigation-desktop__item basket"
+                >
+                  basket
+                </button>
+              </li>
             </ul>
           </nav>
           <div class="navigation-desktop__block secondary">
-            <div class="navigation-desktop__item shop">
-              <h2 class="navigation-desktop__header">shop</h2>
+            <div class="navigation-desktop__item shop not-main-page" data-shop-menu>
+              <div class="flex-space-between-position">
+                <h2 class="navigation-desktop__header">shop</h2>
+                <button
+                  class="navigation-desktop__button"
+                  data-shop-button-close
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="navigation-desktop__item shop"
+                >
+                  close
+                </button>
+              </div>
               <ul class="shop__list">
                 <li>
                   <a href=""
@@ -323,9 +364,19 @@
                 </li>
               </ul>
             </div>
-            <div class="navigation-desktop__item about">
-              <h2 class="navigation-desktop__header">about</h2>
-
+            <div class="navigation-desktop__item about not-main-page" data-about-menu>
+              <div class="flex-space-between-position">
+                <h2 class="navigation-desktop__header">about</h2>
+                <button
+                  class="navigation-desktop__button"
+                  data-about-button-close
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="navigation-desktop__item about"
+                >
+                  close
+                </button>
+              </div>
               <div class="navigation-desktop__section-about">
                 <h3 class="about-header">Our Charity Mission</h3>
                 <p class="about-paragraph">
@@ -387,7 +438,7 @@
                 </div>
               </div>
             </div>
-            <div class="navigation-desktop__item basket" data-basket-menu>
+            <div class="navigation-desktop__item basket not-main-page" data-basket-menu>
               <div class="flex-space-between-position">
                 <h2 class="navigation-desktop__header color-white">basket</h2>
                 <button
@@ -571,25 +622,49 @@
 
       <section class="section-design">
         <div class="container">
-          <h2 class="section__header section__header-design margin-bottom-30">
-            A sincere interest in intelligent design
-          </h2>
-          <div class="section-design__block">
-            <p class="section-paragraph">
-              Our objective has always been to formulate skin, hair and body care products of the
-              finest quality; we investigate widely to source plant-based and laboratory-made
-              ingredients.
-            </p>
-            <p class="section-paragraph">
-              Use only those with a proven record of safety and efficacy. In each of our unique
-              stores, informed consultants are pleased to introduce.
-            </p>
+          <div class="section-design__position">
+            <div class="section-design__text-block">
+              <h2 class="section__heading section__heading-design margin-bottom-30">
+                A sincere interest in <i>intelligent</i> design
+              </h2>
+              <div class="section-design__block">
+                <p class="section-paragraph">
+                  Our objective has always been to formulate skin, hair and body care products of
+                  the finest quality; we investigate widely to source plant-based and
+                  laboratory-made ingredients.
+                </p>
+                <p class="section-paragraph">
+                  Use only those with a proven record of safety and efficacy. In each of our unique
+                  stores, informed consultants are pleased to introduce.
+                </p>
+                <p class="section-paragraph">
+                  Use only those with a proven record of safety and efficacy. In each of our unique
+                  stores, informed consultants are pleased to introduce.
+                </p>
+              </div>
+            </div>
+
+            <picture class="overflow-img">
+              <source
+                srcset="./images/imgs/our-mission-imgs/section-design-img-desktop.jpg 1x"
+                media="(min-width:800px)"
+              />
+
+              <img
+                class="section-design__img"
+                src="./images/imgs/our-mission-imgs/section-design-img.jpg"
+                alt=""
+              />
+            </picture>
           </div>
-          <img
-            class="section-design__img"
-            src="./images/imgs/our-mission-imgs/section-design-img.jpg"
-            alt=""
-          />
+          <picture>
+            <source
+              srcset="./images/imgs/our-mission-imgs/section-design-img-desktop-2.jpg 1x"
+              media="(min-width:800px)"
+            />
+
+            <img src="./images/imgs/our-mission-imgs/section-design-img-desktop-2.jpg" alt="" />
+          </picture>
         </div>
       </section>
 
@@ -597,25 +672,27 @@
 
       <section class="section-gray">
         <div class="container">
-          <h2 class="section__header section__header-philosophy">
-            Our philosophy. Do not wish to be anything but what you are, and try to be that
-            perfectly.
+          <h2 class="section__heading section__heading-philosophy">
+            Our <i>philosophy.</i> <br />
+            Do not wish to be anything but what you are, and try to be that perfectly.
           </h2>
-          <div class="section__header-block">
-            <h3 class="section-h3">design</h3>
-            <p class="section-paragraph">
-              Our objective has always been to formulate skin, hair and body care products of the
-              finest quality; we investigate widely to source plant-based and laboratory-made
-              ingredients, and use only those.
-            </p>
-          </div>
-          <div class="section__header-block">
-            <h3 class="section-h3">PRODUCTS</h3>
-            <p class="section-paragraph">
-              Our objective has always been to formulate skin, hair and body care products of the
-              finest quality; we investigate widely to source plant-based and laboratory-made
-              ingredients, and use only those.
-            </p>
+          <div class="section-gray__content-position">
+            <div class="section__heading-block">
+              <h3 class="section-h3">design</h3>
+              <p class="section-paragraph">
+                Our objective has always been to formulate skin, hair and body care products of the
+                finest quality; we investigate widely to source plant-based and laboratory-made
+                ingredients, and use only those.
+              </p>
+            </div>
+            <div class="section__heading-block">
+              <h3 class="section-h3">PRODUCTS</h3>
+              <p class="section-paragraph">
+                Our objective has always been to formulate skin, hair and body care products of the
+                finest quality; we investigate widely to source plant-based and laboratory-made
+                ingredients, and use only those.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -624,12 +701,26 @@
     <!-- SECTION LAVANDA -->
 
     <section class="section-lavanda">
-      <div class="container">
-        <img src="./images/imgs/our-mission-imgs/lavanda.jpg" alt="" />
-        <p class="section-paragraph section-lavanda-paragraph">
-          Use only those with a proven record of safety and efficacy. In each of our unique stores,
-          informed consultants are pleased to introduce.
-        </p>
+      <div class="container container-lavanda">
+        <picture>
+          <source srcset="./images/imgs/our-mission-imgs/lavanda-desktop.jpg" 1x"
+          media="(min-width:800px)" />
+
+          <img src="./images/imgs/our-mission-imgs/lavanda.jpg" alt="" />
+        </picture>
+        <div class="section-lavanda__block">
+          <picture>
+            <source srcset="./images/imgs/our-mission-imgs/section-lavanda-img.jpg" 1x"
+            media="(min-width:800px)" />
+
+            <img src="./images/imgs/our-mission-imgs/section-lavanda-img.jpg" alt="" />
+          </picture>
+
+          <p class="section-paragraph section-lavanda-paragraph">
+            Use only those with a proven record of safety and efficacy. In each of our unique
+            stores, informed consultants are pleased to introduce.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -639,17 +730,31 @@
       <div class="container">
         <div class="section-interier__group">
           <div class="section-interier__block">
-            <img
-              class="section-interier__img"
-              src="./images/imgs/our-mission-imgs/mission-interier-1.jpg"
-              alt=""
-            />
+            <picture>
+              <source
+                srcset="./images/imgs/our-mission-imgs/mission-interier-desktop-1.jpg"
+                media="(min-width:800px)"
+              />
+
+              <img
+                class="section-interier__img"
+                src="./images/imgs/our-mission-imgs/mission-interier-1.jpg"
+                alt=""
+              />
+            </picture>
 
             <div>
-              <h2 class="section__header section-interier__header margin-bottom-30">
+              <h2 class="section__heading section-interier__heading margin-bottom-30">
                 The language of fragrance
               </h2>
-              <img src="./images/imgs/our-mission-imgs/mission-interier-2.jpg" alt="" />
+              <picture>
+                <source
+                  srcset="./images/imgs/our-mission-imgs/mission-interier-desktop-2.jpg"
+                  media="(min-width:800px)"
+                />
+
+                <img src="./images/imgs/our-mission-imgs/mission-interier-2.jpg" alt="" />
+              </picture>
             </div>
           </div>
           <div>
@@ -667,12 +772,34 @@
         <div class="section-interier__group2">
           <div class="section-interier__block">
             <div class="section-interier__img">
-              <h2 class="section__header section-interier__header margin-bottom-30">
+              <h2 class="section__heading section-interier__header margin-bottom-30">
                 The language of fragrance
               </h2>
-              <img src="./images/imgs/our-mission-imgs/mission-interier-3.jpg" alt="" />
+              <picture>
+                <source
+                  srcset="./images/imgs/our-mission-imgs/mission-interier-desktop-3.jpg"
+                  media="(min-width:800px)"
+                />
+
+                <img
+                  class="section-interier__img"
+                  src="./images/imgs/our-mission-imgs/mission-interier-3.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
-            <img src="./images/imgs/our-mission-imgs/mission-interier-4.jpg" alt="" />
+            <picture>
+              <source
+                srcset="./images/imgs/our-mission-imgs/mission-interier-desktop-4.jpg"
+                media="(min-width:800px)"
+              />
+
+              <img
+                class="section-interier__img"
+                src="./images/imgs/our-mission-imgs/mission-interier-4.jpg"
+                alt=""
+              />
+            </picture>
           </div>
           <div>
             <p class="section-paragraph">
@@ -689,9 +816,31 @@
         <div class="section-interier__group2">
           <div class="section-interier__block">
             <div class="section-interier__img">
-              <img src="./images/imgs/our-mission-imgs/mission-interier-5.jpg" alt="" />
+              <picture>
+                <source
+                  srcset="./images/imgs/our-mission-imgs/mission-interier-desktop-5.jpg"
+                  media="(min-width:800px)"
+                />
+
+                <img
+                  class="section-interier__img"
+                  src="./images/imgs/our-mission-imgs/mission-interier-5.jpg"
+                  alt=""
+                />
+              </picture>
             </div>
-            <img src="./images/imgs/our-mission-imgs/mission-interier-6.jpg" alt="" />
+            <picture>
+              <source
+                srcset="./images/imgs/our-mission-imgs/mission-interier-desktop-6.jpg"
+                media="(min-width:800px)"
+              />
+
+              <img
+                class="section-interier__img"
+                src="./images/imgs/our-mission-imgs/mission-interier-6.jpg"
+                alt=""
+              />
+            </picture>
           </div>
           <div>
             <p class="section-paragraph">
@@ -713,7 +862,7 @@
     <section class="section-architect">
       <div class="container">
         <div>
-          <h2 class="section__header">
+          <h2 class="section__heading">
             Our inspiration. ‘Architecture has recorded the great ideas of the human race.’
           </h2>
           <img
@@ -721,7 +870,7 @@
             src="./images/imgs/our-mission-imgs/architecture-1.jpg"
             alt=""
           />
-          <h3 class="section__header">The language of fragrance</h3>
+          <h3 class="section__heading">The language of fragrance</h3>
           <p class="section-paragraph section-paragraph-architect">
             There is wisdom to following the steps of this dance—to learning the rhythms of natural
             processes. Noting how they occur, and allowing them their pace, without rush or force.
@@ -740,7 +889,7 @@
         </div>
 
         <div>
-          <h3 class="section__header section-architect__header-margin">
+          <h3 class="section__heading section-architect__header-margin">
             The creation of our original fragrances was the first time that we had developed
             products whose entire raison d’être was olfactory pleasure.
           </h3>

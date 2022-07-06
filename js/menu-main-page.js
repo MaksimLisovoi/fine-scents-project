@@ -42,30 +42,17 @@
 
   accountBtnRef.addEventListener('click', () => {
     const expanded = accountBtnRef.getAttribute('aria-expanded') === 'true' || false;
-    const expandedDesktop = desktopAccountBtnRef.getAttribute('aria-expanded') === 'true' || false;
 
-    desktopAccountBtnRef.setAttribute('aria-expanded', !expandedDesktop);
     accountBtnRef.setAttribute('aria-expanded', !expanded);
-
-    accountMenuRef.classList.toggle('is-open');
-  });
-
-  desktopAccountBtnRef.addEventListener('click', () => {
-    const expanded = desktopAccountBtnRef.getAttribute('aria-expanded') === 'true' || false;
-    const expandedMobile = accountBtnRef.getAttribute('aria-expanded') === 'true' || false;
-
-    accountBtnRef.setAttribute('aria-expanded', !expandedMobile);
-    desktopAccountBtnRef.setAttribute('aria-expanded', !expanded);
 
     accountMenuRef.classList.toggle('is-open');
   });
 
   accountBtnRefClose.addEventListener('click', () => {
     const expanded = accountBtnRef.getAttribute('aria-expanded') === 'true' || false;
-    const expandedDesktop = desktopAccountBtnRef.getAttribute('aria-expanded') === 'true' || false;
 
     accountBtnRef.setAttribute('aria-expanded', !expanded);
-    desktopAccountBtnRef.setAttribute('aria-expanded', !expandedDesktop);
+
     accountMenuRef.classList.toggle('is-open');
   });
 
@@ -80,55 +67,10 @@
     basketMenuRef.classList.toggle('is-open');
   });
 
-  desktopBasketBtnRef.addEventListener('click', () => {
-    const expanded = desktopBasketBtnRef.getAttribute('aria-expanded') === 'true' || false;
-
-    desktopBasketBtnRef.classList.toggle('is-open');
-    desktopBasketBtnRef.setAttribute('aria-expanded', !expanded);
-
-    basketMenuRef.classList.toggle('is-open');
-  });
-
   basketBtnRefClose.addEventListener('click', () => {
     const expanded = basketBtnRef.getAttribute('aria-expanded') === 'true' || false;
 
     basketBtnRef.setAttribute('aria-expanded', !expanded);
     basketMenuRef.classList.toggle('is-open');
-  });
-
-  //SHOP//
-
-  desktopShopBtnRef.addEventListener('click', () => {
-    const expanded = desktopShopBtnRef.getAttribute('aria-expanded') === 'true' || false;
-
-    desktopShopBtnRef.classList.toggle('is-open');
-    desktopShopBtnRef.setAttribute('aria-expanded', !expanded);
-
-    shopMenuRef.classList.toggle('is-open');
-  });
-
-  shopBtnRefClose.addEventListener('click', () => {
-    const expanded = desktopShopBtnRef.getAttribute('aria-expanded') === 'true' || false;
-
-    desktopShopBtnRef.setAttribute('aria-expanded', !expanded);
-    shopMenuRef.classList.toggle('is-open');
-  });
-
-  //ABOUT//
-
-  desktopAboutBtnRef.addEventListener('click', () => {
-    const expanded = desktopAboutBtnRef.getAttribute('aria-expanded') === 'true' || false;
-
-    desktopAboutBtnRef.classList.toggle('is-open');
-    desktopAboutBtnRef.setAttribute('aria-expanded', !expanded);
-
-    aboutMenuRef.classList.toggle('is-open');
-  });
-
-  aboutBtnRefClose.addEventListener('click', () => {
-    const expanded = desktopAboutBtnRef.getAttribute('aria-expanded') === 'true' || false;
-
-    desktopAboutBtnRef.setAttribute('aria-expanded', !expanded);
-    aboutMenuRef.classList.toggle('is-open');
   });
 })();

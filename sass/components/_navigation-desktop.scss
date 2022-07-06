@@ -34,13 +34,15 @@
 .navigation-desktop__item {
   padding-top: 86px;
   height: 100vh;
+  transition: transform 500ms ease-in-out;
 
   @include for-size(desktop) {
     padding-top: 36px;
   }
-
-  transition: transform 500ms ease-in-out;
 }
+
+//SHOP//
+
 .navigation-desktop__item.shop {
   display: none;
   top: 0;
@@ -49,26 +51,40 @@
     display: block;
     position: absolute;
     z-index: 4;
-    width: 240px;
-    transform: translateX(-100px);
-    // transform: translateX(250%);
+    width: 422px;
+    transform: translateX(65px);
     padding-left: 30px;
+    padding-right: 32px;
 
     background-color: $secondary-gray-background-color;
   }
 }
 .shop:hover {
-  transform: translateX(-240px);
+  transform: translateX(-95px);
 }
+
+.navigation-desktop__item.shop.not-main-page {
+  @include for-size(desktop) {
+    transform: translateX(640px);
+  }
+}
+.navigation-desktop__item.shop.is-open {
+  @include for-size(desktop) {
+    transform: translateX(80px);
+  }
+}
+
+//ABOUT//
+
 .navigation-desktop__item.about {
   display: none;
   top: 0;
   @include for-size(desktop) {
     display: block;
-    transform: translateX(-10px);
-    width: 248px;
+    transform: translateX(145px);
+    width: 416px;
     padding-left: 26px;
-    padding-right: 30px;
+    padding-right: 26px;
     position: absolute;
     z-index: 5;
 
@@ -76,7 +92,19 @@
   }
 }
 .about:hover {
-  transform: translateX(-170px);
+  transform: translateX(-10px);
+}
+
+.navigation-desktop__item.about.not-main-page {
+  @include for-size(desktop) {
+    transform: translateX(525px);
+  }
+}
+
+.navigation-desktop__item.about.is-open {
+  @include for-size(desktop) {
+    transform: translateX(80px);
+  }
 }
 
 //ACCOUNT//
@@ -97,12 +125,11 @@
   }
 }
 
-// .navigation-desktop__item.account.not-main-page {
-//   @include for-size(desktop) {
-//     // display: none;
-//     transform: translateX(525px);
-//   }
-// }
+.navigation-desktop__item.account.not-main-page {
+  @include for-size(desktop) {
+    transform: translateX(535px);
+  }
+}
 .navigation-desktop__item.is-open {
   display: block;
 }
@@ -120,6 +147,8 @@
 .account:hover {
   transform: translateX(-80px);
 }
+
+//BASKET//
 
 .navigation-desktop__item.basket {
   display: none;
@@ -142,10 +171,18 @@
     transform: translateX(480px);
   }
 }
+.navigation-desktop__item.basket.not-main-page {
+  @include for-size(desktop) {
+    // display: none;
+    transform: translateX(640px);
+  }
+}
 .navigation-desktop__item.basket.is-open {
   display: block;
 
-  // transform: translateX(0);
+  @include for-size(desktop) {
+    transform: translateX(80px);
+  }
 }
 .basket:hover {
   transform: translateX(0);

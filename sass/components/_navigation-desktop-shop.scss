@@ -17,7 +17,8 @@
 }
 
 .shop-item {
-  width: 228px;
+  max-width: 274px;
+  background-repeat: no-repeat;
   // height: 274px;
   height: calc((100vh - 240px) / 3);
 
@@ -27,6 +28,7 @@
 }
 .shop-item.scents {
   background-image: url(../../images/imgs/desktop-menu/scents-shop.jpg);
+
   // background-size: 228px 274px;
 }
 .shop-item.applying {

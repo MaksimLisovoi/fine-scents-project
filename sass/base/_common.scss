@@ -24,6 +24,7 @@ button {
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 figure {
   margin: 0;
@@ -63,21 +64,24 @@ img {
 .page-header {
   background-color: $primary-gray-color;
 }
-.section-gray {
-  padding-top: 100px;
-  padding-bottom: 160px;
 
-  background-color: $gray-background-color;
-}
-.section__header {
+.section__heading {
   font-family: 'Cormorant';
   font-weight: 700;
   font-size: 28px;
   line-height: 1.1;
   letter-spacing: -0.03em;
+
+  @include for-size(desktop) {
+    font-size: 70px;
+  }
 }
 .margin-bottom-30 {
   margin-bottom: 30px;
+
+  @include for-size(desktop) {
+    margin-bottom: 50px;
+  }
 }
 .section-paragraph {
   font-family: 'Roboto';
@@ -85,6 +89,10 @@ img {
   font-size: 12px;
   line-height: 1.6;
   letter-spacing: 0.04em;
+
+  @include for-size(desktop) {
+    font-size: 16px;
+  }
 }
 .section-paragraph:not(:last-child) {
   margin-bottom: 20px;

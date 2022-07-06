@@ -1,13 +1,50 @@
 .section-design {
   padding-top: 60px;
   padding-bottom: 86px;
+
+  @include for-size(desktop) {
+    padding-top: 170px;
+    padding-bottom: 80px;
+  }
 }
+
+.section-design__position {
+  display: flex;
+}
+
 .section-design__block {
   margin-bottom: 65px;
+
+  @include for-size(desktop) {
+    width: 416px;
+    flex-basis: 50%;
+    min-width: 50%;
+  }
+}
+.section-design__text-block {
+  @include for-size(desktop) {
+    flex-basis: 50%;
+    min-width: 50%;
+  }
+}
+.overflow-img {
+  // transform: translateX(calc(50vw - 1296px / 2));
+  flex-basis: 50vw;
+  min-width: 50vw;
 }
 .section-design__img {
-  margin: 0 auto;
+  // margin: 0 auto;
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  margin-bottom: 80px;
 }
-.section__header-design {
+.section__heading-design {
   width: 200px;
+
+  @include for-size(desktop) {
+    width: 526px;
+  }
 }
