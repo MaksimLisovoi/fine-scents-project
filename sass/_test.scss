@@ -1,0 +1,22 @@
+.section {
+  display: flex;
+  overflow: hidden;
+}
+.section__content {
+  flex: 0 0 100%;
+}
+.section__image img {
+  max-width: 100%;
+}
+.section__image {
+  flex: 0 0 50%;
+  transform: translateX(-100%);
+}
+.section__body {
+  width: 50%;
+
+  padding: 0 20px;
+}
+body {
+  margin: 0 auto;
+}

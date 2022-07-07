@@ -7,6 +7,12 @@
   }
 }
 
+.section-lavanda__block {
+  @include for-size(desktop) {
+    display: flex;
+    align-items: flex-end;
+  }
+}
 .section-lavanda-paragraph {
   margin-top: 56px;
   width: 50%;
@@ -18,7 +24,13 @@
     margin-top: 80px;
   }
 }
+.lavanda-desktop-img {
+  display: none;
 
+  @include for-size(desktop) {
+    display: block;
+  }
+}
 .container-lavanda {
   display: flex;
   justify-content: space-between;
