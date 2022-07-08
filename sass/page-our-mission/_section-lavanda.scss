@@ -1,7 +1,9 @@
 .section-lavanda {
   padding-top: 100px;
   padding-bottom: 100px;
+  overflow: hidden;
   @include for-size(desktop) {
+    display: flex;
     padding-top: 151px;
     padding-bottom: 256px;
   }
@@ -35,6 +37,10 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+
+  @include for-size(desktop) {
+    padding-left: 200px;
+  }
 }
 .section-lavanda__block {
   width: 416px;
