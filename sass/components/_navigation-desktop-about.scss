@@ -4,11 +4,12 @@
   padding-top: 145px;
   // padding-bottom: 570px;
 }
-.about-paragraph.arrow::after {
+.navigation-desktop__section-about::after {
   content: '';
   display: inline-block;
   width: 30px;
   height: 12px;
+  margin-left: 50%;
 
   background-image: url('../../images/section-about-arrow.svg');
   background-size: contain;

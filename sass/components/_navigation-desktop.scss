@@ -3,6 +3,7 @@
   // display: none;
 
   @media (max-width: 950px) {
+    padding-top: 36px;
     // display: none;
   }
 }
@@ -29,7 +30,10 @@
 }
 .navigation-desktop__logo {
   display: none;
-  padding-top: 36px;
+
+  @include for-size(desktop) {
+    display: block;
+  }
 }
 .navigation-desktop__item {
   padding-top: 86px;

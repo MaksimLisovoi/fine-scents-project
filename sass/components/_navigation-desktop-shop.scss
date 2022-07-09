@@ -15,7 +15,17 @@
 
   color: #f7f5f3;
 }
+.shop-item::after {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 12px;
+  margin-top: 15%;
 
+  background-image: url('../../images/shop-menu-arrow.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .shop-item {
   max-width: 274px;
   background-repeat: no-repeat;
