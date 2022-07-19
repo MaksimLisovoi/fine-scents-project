@@ -14,7 +14,7 @@
   padding-bottom: 28px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url(../../images/imgs/our-mission-header.jpg);
+  background-image: url(../images/imgs/our-mission-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $primary-gray-color;
@@ -28,7 +28,7 @@
     width: 60%;
     height: 100vh;
     background-position: center;
-    background-image: url(../../images/imgs/our-mission-imgs/our-mission-desktop-header.jpg);
+    background-image: url(../images/imgs/our-mission-imgs/our-mission-desktop-header.jpg);
   }
 }
 .header-slider__pagination {
@@ -117,7 +117,7 @@
   width: 10px;
   height: 31px;
 
-  background-image: url('../../images/sidebar-btn-arrow.svg');
+  background-image: url('../images/sidebar-btn-arrow.svg');
   background-size: contain;
   background-repeat: no-repeat;
 }

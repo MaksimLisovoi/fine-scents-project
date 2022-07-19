@@ -280,7 +280,7 @@ img {
   padding-bottom: 40px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url(../../images/imgs/hero-header.jpg);
+  background-image: url(../images/imgs/hero-header.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -291,7 +291,7 @@ img {
     overflow: hidden;
     max-width: 100%;
     height: 100vh;
-    background-image: url(../../images/imgs/header-hero-desktop.jpg);
+    background-image: url(../images/imgs/header-hero-desktop.jpg);
     background-position: center;
     background-size: cover;
   }
@@ -1490,7 +1490,7 @@ img {
   width: 30px;
   height: 12px;
   margin-left: 50%;
-  background-image: url("../../images/section-about-arrow.svg");
+  background-image: url("../images/section-about-arrow.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1825,7 +1825,7 @@ img {
   padding-bottom: 28px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url(../../images/imgs/our-mission-header.jpg);
+  background-image: url(../images/imgs/our-mission-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #383838;
@@ -1840,7 +1840,7 @@ img {
     width: 60%;
     height: 100vh;
     background-position: center;
-    background-image: url(../../images/imgs/our-mission-imgs/our-mission-desktop-header.jpg);
+    background-image: url(../images/imgs/our-mission-imgs/our-mission-desktop-header.jpg);
   }
 }
 
@@ -1934,7 +1934,7 @@ img {
   display: inline-block;
   width: 10px;
   height: 31px;
-  background-image: url("../../images/sidebar-btn-arrow.svg");
+  background-image: url("../images/sidebar-btn-arrow.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -2297,11 +2297,11 @@ img {
 }
 
 .header-applying {
-  background-image: url(../../images/imgs/applying-imgs/applying-hero.jpg);
+  background-image: url(../images/imgs/applying-imgs/applying-hero.jpg);
 }
 @media (min-width: 950px) {
   .header-applying {
-    background-image: url(../../images/imgs/applying-imgs/applying-hero-desktop.jpg);
+    background-image: url(../images/imgs/applying-imgs/applying-hero-desktop.jpg);
   }
 }
 
@@ -2373,11 +2373,11 @@ img {
 }
 
 .header-all-products {
-  background-image: url(../../images/imgs/all-products-imgs/hero-all-products.jpg);
+  background-image: url(../images/imgs/all-products-imgs/hero-all-products.jpg);
 }
 @media (min-width: 950px) {
   .header-all-products {
-    background-image: url(../../images/imgs/all-products-imgs/hero-all-products-desktop.jpg);
+    background-image: url(../images/imgs/all-products-imgs/hero-all-products-desktop.jpg);
   }
 }
 
