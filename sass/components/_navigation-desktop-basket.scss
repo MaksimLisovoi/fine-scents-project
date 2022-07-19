@@ -5,6 +5,8 @@
 .basket-block {
   padding-top: 19px;
   @include for-size(desktop) {
+    display: none;
+
     padding-top: 44px;
     padding-left: 30px;
     padding-right: 30px;

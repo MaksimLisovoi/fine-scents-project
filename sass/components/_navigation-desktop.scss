@@ -148,8 +148,15 @@
     transform: translateX(75px);
   }
 }
+
 .account:hover {
   transform: translateX(-80px);
+}
+.account:hover .account-block {
+  display: block;
+}
+.account.is-open .account-block {
+  display: block;
 }
 
 //BASKET//
@@ -190,6 +197,12 @@
 }
 .basket:hover {
   transform: translateX(0);
+}
+.basket:hover .basket-block {
+  display: block;
+}
+.basket.is-open .basket-block {
+  display: block;
 }
 
 .navigation-desktop__header {

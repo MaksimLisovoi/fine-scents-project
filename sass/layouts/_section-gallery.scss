@@ -65,7 +65,7 @@
   left: -4%;
 }
 .section-gallery__slideshow-controls {
-  @include for-size(phone) {
+  @include for-size(tablet-portrait) {
     display: none;
   }
   // position: absolute;

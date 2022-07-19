@@ -38,6 +38,7 @@
     padding-bottom: 50px;
   }
 }
+
 .bestseller-cards__block {
   @include for-size(desktop) {
     display: flex;
@@ -52,14 +53,15 @@
 }
 .bestseller__card {
   max-width: 500px;
+  margin: 0 auto;
 
   @include for-size(desktop) {
-    width: calc((100% - 140px * 2) / 3);
+    // width: calc((100% - 140px * 2) / 3);
     max-width: 300px;
   }
 }
 .bestseller__card.desktop {
-  display: none;
+  // display: none;
   @include for-size(desktop) {
     display: block;
   }
@@ -92,8 +94,13 @@
   margin: 0 auto;
 }
 .bestseller__buttons-block {
-  display: none;
+  display: flex;
+  justify-content: space-between;
+  @include for-size(desktop) {
+    display: none;
+  }
 }
+
 .bestseller__price-block {
   display: flex;
   justify-content: space-between;

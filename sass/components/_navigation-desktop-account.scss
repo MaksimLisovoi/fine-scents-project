@@ -1,4 +1,9 @@
 //ACCOUNT//
+.account-block {
+  @include for-size(desktop) {
+    display: none;
+  }
+}
 .flex-space-between-position {
   display: flex;
   justify-content: space-between;
@@ -14,7 +19,7 @@
 }
 
 .account__sign-in-form {
-  display: none;
+  // display: none;
 }
 .account__sign-in-form--input {
   width: 340px;

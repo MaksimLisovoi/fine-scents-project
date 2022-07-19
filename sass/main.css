@@ -58,8 +58,7 @@ img {
 
 .visually-hidden {
   position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0 !important;
   border: 0 !important;
@@ -366,17 +365,14 @@ img {
 
 .bestseller__card {
   max-width: 500px;
+  margin: 0 auto;
 }
 @media (min-width: 950px) {
   .bestseller__card {
-    width: calc((100% - 280px) / 3);
     max-width: 300px;
   }
 }
 
-.bestseller__card.desktop {
-  display: none;
-}
 @media (min-width: 950px) {
   .bestseller__card.desktop {
     display: block;
@@ -417,7 +413,13 @@ img {
 }
 
 .bestseller__buttons-block {
-  display: none;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 950px) {
+  .bestseller__buttons-block {
+    display: none;
+  }
 }
 
 .bestseller__price-block {
@@ -596,6 +598,12 @@ img {
 .section-gallery__slideshow-header.bottom {
   top: 50%;
   left: -4%;
+}
+
+@media (min-width: 768px) {
+  .section-gallery__slideshow-controls {
+    display: none;
+  }
 }
 
 .section-gallery__slideshow-btn {
@@ -1358,6 +1366,14 @@ img {
   transform: translateX(-80px);
 }
 
+.account:hover .account-block {
+  display: block;
+}
+
+.account.is-open .account-block {
+  display: block;
+}
+
 .navigation-desktop__item.basket {
   display: none;
   z-index: 7;
@@ -1398,6 +1414,14 @@ img {
 
 .basket:hover {
   transform: translateX(0);
+}
+
+.basket:hover .basket-block {
+  display: block;
+}
+
+.basket.is-open .basket-block {
+  display: block;
 }
 
 .navigation-desktop__header, .navigation-desktop__button {
@@ -1493,6 +1517,12 @@ img {
   margin-bottom: 25px;
 }
 
+@media (min-width: 950px) {
+  .account-block {
+    display: none;
+  }
+}
+
 .flex-space-between-position {
   display: flex;
   justify-content: space-between;
@@ -1506,10 +1536,6 @@ img {
   .navigation-desktop__button {
     order: 0;
   }
-}
-
-.account__sign-in-form {
-  display: none;
 }
 
 .account__sign-in-form--input {
@@ -1611,6 +1637,7 @@ img {
 }
 @media (min-width: 950px) {
   .basket-block {
+    display: none;
     padding-top: 44px;
     padding-left: 30px;
     padding-right: 30px;
@@ -1880,6 +1907,7 @@ img {
 }
 
 .sidebar__content--text {
+  width: 412px;
   margin-top: 50px;
   margin-left: 200px;
   font-family: "Roboto";
