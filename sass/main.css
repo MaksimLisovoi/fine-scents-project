@@ -1454,7 +1454,7 @@ img {
   width: 30px;
   height: 12px;
   margin-top: 15%;
-  background-image: url("../../images/shop-menu-arrow.svg");
+  background-image: url("../images/shop-menu-arrow.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1469,15 +1469,15 @@ img {
 }
 
 .shop-item.scents {
-  background-image: url(../../images/imgs/desktop-menu/scents-shop.jpg);
+  background-image: url(../images/imgs/desktop-menu/scents-shop.jpg);
 }
 
 .shop-item.applying {
-  background-image: url(../../images/imgs/desktop-menu/applying-shop.jpg);
+  background-image: url(../images/imgs/desktop-menu/applying-shop.jpg);
 }
 
 .shop-item.all {
-  background-image: url(../../images/imgs/desktop-menu/all-shop.jpg);
+  background-image: url(../images/imgs/desktop-menu/all-shop.jpg);
 }
 
 .navigation-desktop__section-about {
