@@ -51,6 +51,16 @@ img {
   height: auto;
 }
 
+.page {
+  flex: 1 1 auto;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -109,6 +119,6 @@ img {
   margin-bottom: 30px;
 
   @include for-size(desktop) {
-    font-size: 18px;
+    font-size: 16px;
   }
 }

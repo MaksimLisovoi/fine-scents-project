@@ -1,15 +1,16 @@
 .navigation-desktop {
   padding-left: 86px;
-  // display: none;
+  display: none;
 
-  @media (max-width: 950px) {
-    padding-top: 36px;
+  @media (min-width: 950px) {
+    display: block;
+    // padding-top: 36px;
     // display: none;
   }
 }
 
 .navigation-desktop__list {
-  display: none;
+  // display: none;
   @include for-size(desktop) {
     display: flex;
     justify-content: end;
@@ -19,6 +20,7 @@
   margin-right: 48px;
 }
 .navigation-desktop__block {
+  // display: none;
   display: flex;
   justify-content: end;
 }
@@ -33,6 +35,8 @@
 
   @include for-size(desktop) {
     display: block;
+    position: absolute;
+    z-index: 5;
   }
 }
 .navigation-desktop__item {

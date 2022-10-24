@@ -8,7 +8,7 @@ bestsellerList.insertAdjacentHTML('beforeend', bestsellerCardMarkup);
 function createProductCard(products) {
   return products
     .map(({ type, price, name, url, urlDesktop, btn }) => {
-      return `  <li class="bestseller__card">
+      return `  <li class="bestseller__card swiper-slide">
     <div class="bestseller__picture-block">
       <picture>
         <source

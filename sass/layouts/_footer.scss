@@ -1,12 +1,13 @@
 .footer {
-  padding-top: 56px;
-  padding-bottom: 34px;
+  padding-top: 50px;
+  padding-bottom: 20px;
 
   background-color: $primary-black-color;
   color: $footer-text-color;
 
   @include for-size(desktop) {
-    padding-top: 75px;
+    padding-top: 60px;
+    padding-bottom: 30px;
   }
 }
 
