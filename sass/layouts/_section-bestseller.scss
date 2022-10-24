@@ -146,7 +146,9 @@
   }
 }
 
-.bestseller-cards {
+.bestseller-cards,
+.livingroom-cards,
+.bathroom-cards {
   // .bestseller-cards__block
 
   &__block {
@@ -166,15 +168,15 @@
   position: absolute;
   bottom: 274px;
 }
-.bestseller-prev {
+.control-prev {
   left: -18px;
 }
-.bestseller-next {
+.control-next {
   right: -18px;
 }
 
 .bestseller-swiper-slider,
-.applying-swiper-slider {
+.bathroom-swiper-slider {
   @include for-size(desktop) {
     margin: 0 -35px;
   }

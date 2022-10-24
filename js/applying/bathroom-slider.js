@@ -1,4 +1,4 @@
-const swiper = new Swiper('.applying-swiper-slider', {
+const swiper = new Swiper('.bathroom-swiper-slider', {
   // Optional parameters
   direction: 'horizontal',
 
@@ -19,8 +19,8 @@ const swiper = new Swiper('.applying-swiper-slider', {
   },
 
   navigation: {
-    nextEl: '.bestseller-next',
-    prevEl: '.bestseller-prev',
+    nextEl: '.bathroom-next',
+    prevEl: '.bathroom-prev',
   },
 
   autoHeigth: true,

@@ -470,7 +470,9 @@ img {
 }
 
 @media (min-width: 950px) {
-  .bestseller-cards__block {
+  .bestseller-cards__block,
+.livingroom-cards__block,
+.bathroom-cards__block {
     display: flex;
     padding-top: 30px;
     border-top: 1px solid #868483;
@@ -482,17 +484,17 @@ img {
   bottom: 274px;
 }
 
-.bestseller-prev {
+.control-prev {
   left: -18px;
 }
 
-.bestseller-next {
+.control-next {
   right: -18px;
 }
 
 @media (min-width: 950px) {
   .bestseller-swiper-slider,
-.applying-swiper-slider {
+.bathroom-swiper-slider {
     margin: 0 -35px;
   }
 }
