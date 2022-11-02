@@ -14,10 +14,6 @@
   padding-bottom: 28px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url(../images/imgs/our-mission-header.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $primary-gray-color;
 
   @include for-size(desktop) {
     position: relative;
@@ -25,10 +21,7 @@
     padding-right: 73px;
     margin-right: 0;
     margin-left: 0;
-    width: 60%;
-    height: 100vh;
-    background-position: center;
-    background-image: url(../images/imgs/our-mission-imgs/our-mission-desktop-header.jpg);
+    width: 100%;
   }
 }
 .header-slider__pagination {
@@ -48,76 +41,4 @@
   margin-bottom: 40px;
   border-bottom: 1px solid rgba(229, 223, 211, 0.5);
   padding-bottom: 9px;
-}
-
-.sidebar {
-  display: none;
-  @include for-size(desktop) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    padding-top: 36px;
-    padding-bottom: 45px;
-    padding-right: 95px;
-  }
-}
-
-.sidebar__content--heading {
-  font-family: 'Cormorant';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 1.02;
-
-  letter-spacing: -0.03em;
-  color: #e5dfd3;
-
-  @include for-size(desktop) {
-    width: 510px;
-    font-size: 116px;
-  }
-}
-.sidebar__content--heading.sidebar__content--heading-mobile {
-  margin-bottom: 50%;
-  margin-top: 50%;
-  padding-left: 18px;
-  @include for-size(desktop) {
-    display: none;
-  }
-}
-.sidebar__content--text {
-  width: 412px;
-  margin-top: 50px;
-  margin-left: 200px;
-
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-
-  color: #e5dfd3;
-}
-.sidebar-btn {
-  // position: absolute;
-  align-self: flex-end;
-  bottom: 45px;
-  right: -50px;
-
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 0;
-}
-.sidebar-btn::after {
-  content: '';
-  margin-top: 20px;
-  display: inline-block;
-  width: 10px;
-  height: 31px;
-
-  background-image: url('../images/sidebar-btn-arrow.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
 }
