@@ -8,57 +8,81 @@
     padding-top: 170px;
     padding-bottom: 80px;
   }
-}
+  // .section-design__position
 
-.section-design__position {
-  @include for-size(desktop) {
-    display: flex;
+  &__position {
+    @include for-size(desktop) {
+      display: flex;
+    }
   }
-}
 
-.section-design__block {
-  margin-bottom: 65px;
+  // .section-design__text-block
 
-  @include for-size(desktop) {
-    width: 416px;
-    flex-basis: 50%;
-    min-width: 50%;
+  &__text-block {
+    @include for-size(desktop) {
+      min-width: 50.6%;
+    }
   }
-}
-.section-design__text-block {
-  @include for-size(desktop) {
-    flex-basis: 50%;
-    min-width: 51%;
-  }
-}
-.overflow-img {
-  // transform: translateX(calc(50vw - 1296px / 2));
-  @include for-size(desktop) {
-    flex-basis: 50vw;
-    min-width: 50vw;
 
-    margin-bottom: 80px;
+  // .section-design__block
+
+  &__block {
+    margin-bottom: 65px;
+
+    @include for-size(desktop) {
+      width: 100%;
+      // padding-right: 244px;
+      padding-right: 11vw;
+    }
   }
-}
-.section-design__img {
-  // margin: 0 auto;
-  display: block;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.section-design__position + picture img {
-  display: none;
-  @include for-size(desktop) {
+
+  // .section-design__img-block
+
+  &__img-block {
+    @include for-size(desktop) {
+      min-width: 49.3vw;
+    }
+  }
+
+  // .section-design__img
+
+  &__img {
     display: block;
-    margin-right: 0;
-    margin-left: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  // .section-design__img--first
+
+  &__img--first {
+    margin-bottom: 50px;
+  }
+
+  // .section-design__img--second
+
+  &__img--second {
+    display: none;
+    @include for-size(desktop) {
+      display: block;
+      // margin-right: 0;
+      // margin-left: auto;
+    }
   }
 }
-.section__heading-design {
-  width: 200px;
+.section {
+  // .section__heading
 
-  @include for-size(desktop) {
-    width: 526px;
+  &__heading {
+  }
+
+  // .section__heading-design
+
+  &__heading-design {
+    width: 200px;
+
+    @include for-size(desktop) {
+      width: 100%;
+      padding-right: 15px;
+    }
   }
 }

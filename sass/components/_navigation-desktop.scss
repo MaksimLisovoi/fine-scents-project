@@ -4,14 +4,22 @@
 
   @media (min-width: 950px) {
     display: block;
-    height: 100vh;
+
     // padding-top: 36px;
     // display: none;
   }
 }
-.mission-page nav {
+.mission-page.navigation-desktop {
+  height: 100vh;
+}
+.navigation-desktop__nav {
   display: flex;
   justify-content: space-between;
+  padding-top: 34px;
+}
+.navigation-desktop__nav.scroll-nav {
+  padding-top: 13px;
+  align-items: center;
 }
 
 .navigation-desktop__list {

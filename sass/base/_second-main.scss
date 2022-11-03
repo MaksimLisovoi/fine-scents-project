@@ -3,8 +3,10 @@
 
   background-color: $header-sidebar-color;
   &__body {
-    display: flex;
-    padding-left: 86px;
+    @include for-size(desktop) {
+      display: flex;
+      padding-left: 86px;
+    }
   }
 
   // .second-main__sidebar
@@ -81,9 +83,10 @@
 }
 
 .sidebar__content--heading.sidebar__content--heading-mobile {
-  margin-bottom: 50%;
-  margin-top: 50%;
+  position: absolute;
+  top: 320px;
   padding-left: 18px;
+
   @include for-size(desktop) {
     display: none;
   }

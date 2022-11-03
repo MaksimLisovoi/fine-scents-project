@@ -28,8 +28,7 @@
 // }
 
 .header {
-  position: fixed;
-  // position: absolute;
+  position: absolute;
   top: -120px;
   width: 100%;
   left: 0;
@@ -37,7 +36,11 @@
   background-color: $secondary-gray-background-color;
   // background-color: #fff;
   transition: top 400ms ease-in-out;
-  height: 120px;
+  height: 80px;
+
+  @include for-size(desktop) {
+    position: fixed;
+  }
 
   &--transparent-bg {
     background-color: transparent;
@@ -47,6 +50,20 @@
     top: 0;
 
     transition: top 200ms ease-in-out; // shows up twice as fast, than it hides
+  }
+}
+
+.logo {
+  &__icon {
+    width: 150px;
+    opacity: 1;
+    // transition: width 200ms ease-in-out;
+  }
+
+  &__icon--black {
+    width: 70px;
+    margin-left: 29px;
+    // transition: width 400ms ease-in-out;
   }
 }
 
