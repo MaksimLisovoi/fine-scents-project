@@ -287,6 +287,24 @@ img {
   display: block;
 }
 
+.header {
+  position: fixed;
+  top: -120px;
+  width: 100%;
+  left: 0;
+  z-index: 50;
+  background-color: #eae8e6;
+  transition: top 400ms ease-in-out;
+  height: 120px;
+}
+.header--transparent-bg {
+  background-color: transparent;
+}
+.header--visible {
+  top: 0;
+  transition: top 200ms ease-in-out;
+}
+
 .header__controls {
   display: none;
   text-align: center;
