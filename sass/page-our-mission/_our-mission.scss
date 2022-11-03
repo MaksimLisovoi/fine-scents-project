@@ -4,19 +4,24 @@
     justify-content: space-between;
 
     background-color: $header-sidebar-color;
-    padding-left: 86px;
+    // padding-left: 86px;
   }
 }
 
 .our-mission__header {
   overflow: hidden;
-  max-width: 950px;
+  // max-width: 950px;
+
   padding-bottom: 28px;
   margin-right: auto;
   margin-left: auto;
 
   @include for-size(desktop) {
-    position: relative;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    // position: relative;
     padding-top: 36px;
     padding-right: 73px;
     margin-right: 0;

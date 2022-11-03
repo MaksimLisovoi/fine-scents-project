@@ -1408,7 +1408,13 @@ img {
 @media (min-width: 950px) {
   .navigation-desktop {
     display: block;
+    height: 100vh;
   }
+}
+
+.mission-page nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (min-width: 950px) {
@@ -2007,20 +2013,21 @@ img {
     display: flex;
     justify-content: space-between;
     background-color: #333333;
-    padding-left: 86px;
   }
 }
 
 .our-mission__header {
   overflow: hidden;
-  max-width: 950px;
   padding-bottom: 28px;
   margin-right: auto;
   margin-left: auto;
 }
 @media (min-width: 950px) {
   .our-mission__header {
-    position: relative;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
     padding-top: 36px;
     padding-right: 73px;
     margin-right: 0;
