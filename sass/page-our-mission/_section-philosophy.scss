@@ -5,8 +5,8 @@
   background-color: $gray-background-color;
 
   @include for-size(desktop) {
-    padding-top: 150px;
-    padding-bottom: 315px;
+    padding-top: 120px;
+    padding-bottom: 160px;
   }
 }
 

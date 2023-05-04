@@ -95,10 +95,32 @@
   letter-spacing: 0.04em;
 
   color: $footer-text-color;
+
   @include for-size(desktop) {
     font-size: 16px;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
   }
 }
+
+.footer-features__link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.footer-features__link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 .footer__header {
   font-family: 'Roboto';
   font-weight: 500;

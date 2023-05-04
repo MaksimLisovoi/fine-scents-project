@@ -5,8 +5,8 @@
   background-color: $gray-background-color;
 
   @include for-size(desktop) {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 .section-interier__heading {
@@ -45,6 +45,9 @@
     margin-bottom: 160px;
   }
 }
+.section-interier__group2 img {
+  width: 100%;
+}
 .desktop-paragraph__block {
   @include for-size(desktop) {
     max-width: 1075px;
@@ -61,6 +64,16 @@
     width: 100%;
   }
 }
+
+.section-interier__pic {
+  @media (min-width: 800px) {
+    // display: none;
+  }
+  @media (max-width: 1320px) {
+    width: 100%;
+  }
+}
+
 .section-interier__img:not(:last-child) {
   margin-right: 30px;
 

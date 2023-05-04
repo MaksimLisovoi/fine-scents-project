@@ -4,8 +4,8 @@
   overflow: hidden;
   @include for-size(desktop) {
     display: flex;
-    padding-top: 151px;
-    padding-bottom: 256px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 
@@ -24,6 +24,14 @@
     width: 100%;
     margin-left: 0;
     margin-top: 80px;
+  }
+}
+.lavanda-img {
+  padding-right: 90px;
+
+  @include for-size(desktop) {
+    padding: 0;
+    width: 100%;
   }
 }
 .lavanda-desktop-img {

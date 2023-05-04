@@ -28,7 +28,7 @@
 // }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: -120px;
   width: 100%;
   left: 0;
@@ -36,10 +36,11 @@
   background-color: $secondary-gray-background-color;
   // background-color: #fff;
   transition: top 400ms ease-in-out;
-  height: 80px;
+  height: 120px;
 
   @include for-size(desktop) {
     position: fixed;
+    height: 80px;
   }
 
   &--transparent-bg {

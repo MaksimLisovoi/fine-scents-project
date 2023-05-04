@@ -13,6 +13,9 @@ const swiper = new Swiper('.gallery-swiper-slider', {
     950: {
       spaceBetween: 400,
     },
+    1800: {
+      spaceBetween: 600,
+    },
   },
 
   pagination: {

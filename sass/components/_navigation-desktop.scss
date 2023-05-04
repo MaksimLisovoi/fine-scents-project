@@ -1,6 +1,6 @@
 .navigation-desktop {
   padding-left: 86px;
-  display: none;
+  // display: none;
 
   @media (min-width: 950px) {
     display: block;
@@ -10,12 +10,15 @@
   }
 }
 .mission-page.navigation-desktop {
-  height: 100vh;
+  // height: 100vh;
 }
 .navigation-desktop__nav {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 34px;
+  display: none;
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 34px;
+  }
 }
 .navigation-desktop__nav.scroll-nav {
   padding-top: 13px;
@@ -70,6 +73,7 @@
 
   @include for-size(desktop) {
     display: block;
+    height: 100vh;
     position: absolute;
     z-index: 4;
     width: 422px;
@@ -86,11 +90,13 @@
 
 .navigation-desktop__item.shop.not-main-page {
   @include for-size(desktop) {
+    position: fixed;
     transform: translateX(640px);
   }
 }
 .navigation-desktop__item.shop.is-open {
   @include for-size(desktop) {
+    height: 100vh;
     transform: translateX(80px);
   }
 }
@@ -118,6 +124,7 @@
 
 .navigation-desktop__item.about.not-main-page {
   @include for-size(desktop) {
+    position: fixed;
     transform: translateX(525px);
   }
 }
@@ -131,7 +138,7 @@
 //ACCOUNT//
 
 .navigation-desktop__item.account {
-  display: none;
+  transform: translateX(-100%);
 
   position: absolute;
   top: 0;
@@ -143,11 +150,14 @@
     display: block;
     width: 455px;
     transform: translateX(280px);
+    transition: transform 500ms ease-in-out;
   }
+  transition: transform 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .navigation-desktop__item.account.not-main-page {
   @include for-size(desktop) {
+    position: fixed;
     transform: translateX(535px);
   }
 }
@@ -167,7 +177,9 @@
 }
 
 .account:hover {
-  transform: translateX(-80px);
+  @include for-size(desktop) {
+    transform: translateX(-80px);
+  }
 }
 .account:hover .account-block {
   display: block;
@@ -179,7 +191,7 @@
 //BASKET//
 
 .navigation-desktop__item.basket {
-  display: none;
+  transform: translateX(-100%);
   z-index: 7;
   position: absolute;
   top: 0;
@@ -197,23 +209,29 @@
     padding-right: 23px;
     padding-bottom: 66px;
     transform: translateX(480px);
+    transition: transform 500ms ease-in-out;
   }
+  transition: transform 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .navigation-desktop__item.basket.not-main-page {
   @include for-size(desktop) {
     // display: none;
+    position: fixed;
     transform: translateX(640px);
   }
 }
 .navigation-desktop__item.basket.is-open {
   display: block;
 
+  transform: translateX(0);
   @include for-size(desktop) {
     transform: translateX(80px);
   }
 }
 .basket:hover {
-  transform: translateX(0);
+  @include for-size(desktop) {
+    transform: translateX(0);
+  }
 }
 .basket:hover .basket-block {
   display: block;

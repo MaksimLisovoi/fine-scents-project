@@ -87,7 +87,7 @@
     }
 
     @include for-size(desktop) {
-      padding: 0 35px;
+      padding: 0 70px;
       flex: 0 1 33.333%;
     }
   }
@@ -178,7 +178,7 @@
 .bestseller-swiper-slider,
 .bathroom-swiper-slider {
   @include for-size(desktop) {
-    margin: 0 -35px;
+    margin: 0 -70px;
   }
 }
 

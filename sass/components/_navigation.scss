@@ -74,21 +74,25 @@
   position: relative;
 }
 .burger-navigation__container {
-  display: none;
+  display: block;
+  // display: none;
   position: absolute;
   z-index: 10;
   top: 0;
   left: 0;
-
   width: 100%;
+
+  transform: translateX(-100%);
 
   padding-top: 84px;
   padding-bottom: 201px;
 
   background-color: $menu-background-color;
+
+  transition: transform 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .burger-navigation__container.is-open {
-  display: block;
+  transform: translateX(0);
 }
 .burger-navigation__controls {
   display: flex;
